@@ -249,7 +249,7 @@ const EmailAutomation = () => {
           onClick={() => setActiveTab('templates')}
           className="flex items-center"
         >
-          <Template className="h-4 w-4 mr-2" />
+          <FileText className="h-4 w-4 mr-2" />
           Templates
         </Button>
         <Button 

@@ -156,6 +156,87 @@ const LeadGenerationHub = () => {
     return 'text-red-600';
   };
 
+  // Handler for calling leads
+  const handleCallLead = async (lead) => {
+    if (!lead?.contact_phone) {
+      addNotification({
+        id: `no-phone-${Date.now()}`,
+        type: 'error',
+        title: 'No Phone Number',
+        message: `Phone number not available for ${lead?.company_name || 'this lead'}`
+      });
+      return;
+    }
+
+    try {
+      const result = await dialerService.makeCall({
+        to_number: dialerService.formatPhoneNumber(lead.contact_phone),
+        purpose: 'lead_follow_up',
+        lead_id: lead.id,
+        notes: `Lead follow-up call - ${lead.company_name} (Score: ${leadScores.find(s => s.lead_id === lead.id)?.score || 'Unknown'})`
+      });
+
+      if (result.success) {
+        addNotification({
+          id: `call-initiated-${Date.now()}`,
+          type: 'success',
+          title: 'Call Initiated',
+          message: `Calling ${lead.company_name} at ${lead.contact_phone}`
+        });
+      }
+    } catch (error) {
+      console.error('Failed to call lead:', error);
+      addNotification({
+        id: `call-failed-${Date.now()}`,
+        type: 'error',
+        title: 'Call Failed',
+        message: 'Failed to initiate call. Please try again.'
+      });
+    }
+  };
+
+  // Handler for emailing leads
+  const handleEmailLead = async (lead) => {
+    if (!lead?.contact_email) {
+      addNotification({
+        id: `no-email-${Date.now()}`,
+        type: 'error',
+        title: 'No Email Address',
+        message: `Email address not available for ${lead?.company_name || 'this lead'}`
+      });
+      return;
+    }
+
+    try {
+      const leadScore = leadScores.find(s => s.lead_id === lead.id);
+      
+      const result = await emailService.sendLeadFollowUp({
+        lead_email: lead.contact_email,
+        lead_name: lead.company_name,
+        lead_score: leadScore?.score || 75,
+        estimated_value: `$${leadScore?.estimated_value?.toLocaleString() || '50,000'}`,
+        sales_rep: 'BODE EV Sales Team'
+      });
+
+      if (result.success) {
+        addNotification({
+          id: `email-sent-${Date.now()}`,
+          type: 'success',
+          title: 'Email Sent',
+          message: `Lead follow-up email sent to ${lead.company_name}`
+        });
+      }
+    } catch (error) {
+      console.error('Failed to email lead:', error);
+      addNotification({
+        id: `email-failed-${Date.now()}`,
+        type: 'error',
+        title: 'Email Failed',
+        message: 'Failed to send email. Please try again.'
+      });
+    }
+  };
+
   return (
     <div className="p-6 space-y-6">
       {/* Header */}

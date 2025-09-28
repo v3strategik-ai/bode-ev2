@@ -370,11 +370,25 @@ const LeadGenerationHub = () => {
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex gap-2">
-                          <button className="text-blue-600 hover:bg-blue-50 px-3 py-1 rounded text-sm">
-                            Contact
+                          <button 
+                            onClick={() => handleCallLead(lead)}
+                            className="text-blue-600 hover:bg-blue-50 px-3 py-1 rounded text-sm flex items-center gap-1"
+                            title={`Call ${lead?.company_name}`}
+                          >
+                            <Phone size={14} />
+                            Call
                           </button>
-                          <button className="text-gray-600 hover:bg-gray-50 px-3 py-1 rounded text-sm">
-                            Details
+                          <button 
+                            onClick={() => handleEmailLead(lead)}
+                            className="text-green-600 hover:bg-green-50 px-3 py-1 rounded text-sm flex items-center gap-1"
+                            title={`Email ${lead?.company_name}`}
+                          >
+                            <Mail size={14} />
+                            Email
+                          </button>
+                          <button className="text-gray-600 hover:bg-gray-50 px-3 py-1 rounded text-sm flex items-center gap-1">
+                            <Eye size={14} />
+                            View
                           </button>
                         </div>
                       </td>

@@ -91,9 +91,9 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
         <div className="flex items-center space-x-6">
           <div className="text-right text-sm bg-gray-50 backdrop-blur-sm rounded-xl px-4 py-2 border border-gray-200">
             <div className="font-mono text-xl font-bold text-gray-900">
-              03:03:34 AM
+              {formatTime(currentTime)}
             </div>
-            <div className="text-gray-600 text-xs">9/22/2025</div>
+            <div className="text-gray-600 text-xs">{formatDate(currentTime)}</div>
           </div>
           
           <div className="flex items-center space-x-3">

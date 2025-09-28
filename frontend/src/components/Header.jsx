@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search, Moon, Sun } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';

@@ -93,6 +93,10 @@ const MainContent = () => {
       return <TeamMessenger />;
     }
 
+    if (activeTab === 'communications') {
+      return <SalesCommunicationsHub />;
+    }
+
     // Default dashboard view
     return (
       <>

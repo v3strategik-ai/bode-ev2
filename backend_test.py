@@ -1488,6 +1488,214 @@ def test_file_deletion():
         print(f"❌ File deletion test error: {str(e)}")
         return False
 
+# ============================================================================
+# EMAIL AUTOMATION TESTS (Sales Communications Phase 1)
+# ============================================================================
+
+def test_email_service_status():
+    """Test email service status and configuration"""
+    print("\n📧 Testing Email Service Status...")
+    
+    result = test_api_endpoint("GET", "/email/status")
+    if result:
+        print(f"   Service Name: {result.get('service_name')}")
+        print(f"   SendGrid Configured: {result.get('sendgrid_configured')}")
+        print(f"   AI Configured: {result.get('ai_configured')}")
+        print(f"   Mock Mode: {result.get('mock_mode')}")
+        print(f"   Sender Email: {result.get('sender_email')}")
+        print(f"   Available Templates: {len(result.get('available_templates', []))} templates")
+        
+        # Validate response structure
+        required_fields = ['service_name', 'sendgrid_configured', 'mock_mode', 'available_templates']
+        missing_fields = [field for field in required_fields if field not in result]
+        if missing_fields:
+            print(f"❌ Missing required fields: {missing_fields}")
+            return False
+            
+        # Check if service is working in mock mode as expected
+        if result.get('mock_mode'):
+            print(f"   ✅ Email service running in mock mode (expected)")
+        else:
+            print(f"   ✅ Email service configured with real SendGrid")
+            
+        return True
+    return False
+
+def test_email_lead_followup():
+    """Test automated lead follow-up email"""
+    print("\n📧 Testing Email Lead Follow-up...")
+    
+    if not access_token:
+        print("❌ No access token available - login test must pass first")
+        return False
+    
+    # Test data from review request
+    lead_data = {
+        "lead_email": "test@tesla.com",
+        "lead_name": "John Tesla",
+        "lead_score": 92,
+        "estimated_value": "$750K",
+        "sales_rep": "BODE EV Team"
+    }
+    
+    result = test_messenger_api_endpoint("POST", "/email/lead-follow-up", lead_data, auth_required=True)
+    if result:
+        print(f"   Success: {result.get('success')}")
+        print(f"   Message ID: {result.get('message_id')}")
+        print(f"   Status Code: {result.get('status_code')}")
+        print(f"   Message: {result.get('message')}")
+        
+        # Validate response structure
+        required_fields = ['success', 'message_id', 'status_code', 'message']
+        missing_fields = [field for field in required_fields if field not in result]
+        if missing_fields:
+            print(f"❌ Missing required fields: {missing_fields}")
+            return False
+            
+        # Check if email was processed successfully
+        if result.get('success'):
+            print(f"   ✅ Lead follow-up email processed successfully")
+            return True
+        else:
+            print(f"   ❌ Lead follow-up email failed")
+            return False
+    return False
+
+def test_ai_email_generation():
+    """Test AI personalized email generation"""
+    print("\n🤖 Testing AI Email Generation...")
+    
+    if not access_token:
+        print("❌ No access token available - login test must pass first")
+        return False
+    
+    # Test data from review request
+    ai_email_data = {
+        "recipient_name": "Tesla Fleet",
+        "recipient_email": "fleet@tesla.com",
+        "context": "lead_follow_up",
+        "tone": "professional",
+        "call_to_action": "Schedule consultation"
+    }
+    
+    result = test_messenger_api_endpoint("POST", "/email/ai-generate", ai_email_data, auth_required=True)
+    if result:
+        print(f"   Success: {result.get('success')}")
+        print(f"   Subject: {result.get('subject', '')[:50]}...")
+        print(f"   HTML Content Length: {len(result.get('html_content', ''))} characters")
+        print(f"   Message: {result.get('message')}")
+        
+        # Validate response structure
+        required_fields = ['success', 'subject', 'html_content', 'message']
+        missing_fields = [field for field in required_fields if field not in result]
+        if missing_fields:
+            print(f"❌ Missing required fields: {missing_fields}")
+            return False
+            
+        # Check if AI generated realistic content
+        if result.get('success') and result.get('html_content'):
+            html_content = result.get('html_content', '')
+            subject = result.get('subject', '')
+            
+            # Basic validation of AI-generated content
+            if len(html_content) > 100 and len(subject) > 5:
+                print(f"   ✅ AI email generation working with realistic content")
+                return True
+            else:
+                print(f"   ❌ AI generated content seems too short or invalid")
+                return False
+        else:
+            print(f"   ❌ AI email generation failed")
+            return False
+    return False
+
+# ============================================================================
+# DIALER TESTS (Sales Communications Phase 1)
+# ============================================================================
+
+def test_dialer_service_status():
+    """Test dialer service status and configuration"""
+    print("\n📞 Testing Dialer Service Status...")
+    
+    result = test_api_endpoint("GET", "/dialer/status")
+    if result:
+        print(f"   Service Name: {result.get('service_name')}")
+        print(f"   Twilio Configured: {result.get('twilio_configured')}")
+        print(f"   Mock Mode: {result.get('mock_mode')}")
+        print(f"   Phone Number: {result.get('phone_number')}")
+        print(f"   Available Purposes: {len(result.get('available_purposes', []))} purposes")
+        print(f"   Features: {len(result.get('features', []))} features")
+        
+        # Validate response structure
+        required_fields = ['service_name', 'twilio_configured', 'mock_mode', 'available_purposes', 'features']
+        missing_fields = [field for field in required_fields if field not in result]
+        if missing_fields:
+            print(f"❌ Missing required fields: {missing_fields}")
+            return False
+            
+        # Check if service is working in mock mode as expected
+        if result.get('mock_mode'):
+            print(f"   ✅ Dialer service running in mock mode (expected)")
+        else:
+            print(f"   ✅ Dialer service configured with real Twilio")
+            
+        # Validate available purposes include expected ones
+        purposes = result.get('available_purposes', [])
+        expected_purposes = ['lead_follow_up', 'customer_service', 'sales_call']
+        if all(purpose in purposes for purpose in expected_purposes):
+            print(f"   ✅ All expected call purposes available")
+        else:
+            print(f"   ⚠️ Some expected call purposes missing")
+            
+        return True
+    return False
+
+def test_dialer_make_call():
+    """Test making a call (mock mode)"""
+    print("\n📞 Testing Dialer Make Call...")
+    
+    if not access_token:
+        print("❌ No access token available - login test must pass first")
+        return False
+    
+    # Test data from review request
+    call_data = {
+        "to_number": "+15551234567",
+        "purpose": "lead_follow_up",
+        "notes": "Tesla fleet follow-up call"
+    }
+    
+    result = test_messenger_api_endpoint("POST", "/dialer/call", call_data, auth_required=True)
+    if result:
+        print(f"   Success: {result.get('success')}")
+        print(f"   Call ID: {result.get('call_id')}")
+        print(f"   Status: {result.get('status')}")
+        print(f"   Message: {result.get('message')}")
+        
+        # Validate response structure
+        required_fields = ['success', 'call_id', 'status', 'message']
+        missing_fields = [field for field in required_fields if field not in result]
+        if missing_fields:
+            print(f"❌ Missing required fields: {missing_fields}")
+            return False
+            
+        # Check if call was initiated successfully (in mock mode)
+        if result.get('success'):
+            print(f"   ✅ Call initiated successfully (mock mode)")
+            
+            # Validate call ID format
+            call_id = result.get('call_id', '')
+            if len(call_id) > 10:  # Should be a reasonable length
+                print(f"   ✅ Call ID format valid")
+                return True
+            else:
+                print(f"   ❌ Call ID format seems invalid")
+                return False
+        else:
+            print(f"   ❌ Call initiation failed")
+            return False
+    return False
+
 # Global variable to store uploaded filename
 uploaded_filename = ""
 

@@ -256,6 +256,14 @@ const LeadGenerationHub = () => {
             <Plus size={18} />
             Add New Lead
           </button>
+          <button 
+            onClick={() => window.open('/communications', '_blank')}
+            className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 flex items-center gap-2"
+            title="Open Sales Communications Hub"
+          >
+            <Phone size={18} />
+            Communications Hub
+          </button>
           <button className="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 flex items-center gap-2">
             <Download size={18} />
             Export Leads

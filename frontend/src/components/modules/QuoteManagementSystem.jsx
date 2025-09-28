@@ -352,25 +352,25 @@ const QuoteManagementSystem = () => {
                   </td>
                   <td className="px-6 py-4">
                     <div className="flex gap-2">
-                      <button className="text-blue-600 hover:bg-blue-50 p-2 rounded">
-                        <Eye size={16} />
-                      </button>
-                      <button className="text-green-600 hover:bg-green-50 p-2 rounded">
-                        <Send size={16} />
-                      </button>
                       <button 
                         onClick={() => handleCallQuote(quote)}
-                        className="text-purple-600 hover:bg-purple-50 p-2 rounded"
-                        title="Call customer"
+                        className="text-blue-600 hover:bg-blue-50 p-2 rounded"
+                        title={`Call ${quote.contact_name} at ${quote.client}`}
                       >
                         <Phone size={16} />
                       </button>
                       <button 
                         onClick={() => handleEmailQuote(quote)}
-                        className="text-orange-600 hover:bg-orange-50 p-2 rounded"
-                        title="Email customer"
+                        className="text-green-600 hover:bg-green-50 p-2 rounded"
+                        title={`Email ${quote.contact_name} quote follow-up`}
                       >
                         <Mail size={16} />
+                      </button>
+                      <button className="text-purple-600 hover:bg-purple-50 p-2 rounded" title="Send quote">
+                        <Send size={16} />
+                      </button>
+                      <button className="text-gray-600 hover:bg-gray-50 p-2 rounded" title="View details">
+                        <Eye size={16} />
                       </button>
                     </div>
                   </td>

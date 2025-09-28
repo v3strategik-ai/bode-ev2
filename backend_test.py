@@ -11,7 +11,7 @@ from datetime import datetime
 import uuid
 
 # Backend URL from environment
-BACKEND_URL = "https://evcrm-saas.preview.emergentagent.com/api"
+BACKEND_URL = "https://notify-mesh.preview.emergentagent.com/api"
 
 # Global variables for messenger testing
 access_token = ""

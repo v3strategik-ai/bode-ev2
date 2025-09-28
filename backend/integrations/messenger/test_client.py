@@ -121,7 +121,7 @@ async def get_test_client():
         <script>
             let accessToken = '';
             let websocket = null;
-            const backendUrl = 'https://evcrm-saas.preview.emergentagent.com/api';
+            const backendUrl = 'https://notify-mesh.preview.emergentagent.com/api';
             
             // Authentication Functions
             async function registerUser() {

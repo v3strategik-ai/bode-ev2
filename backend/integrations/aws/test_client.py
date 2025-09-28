@@ -129,7 +129,7 @@ async def get_file_test_client():
 
         <script>
             let accessToken = localStorage.getItem('messenger_token') || '';
-            const backendUrl = 'https://evcrm-saas.preview.emergentagent.com/api';
+            const backendUrl = 'https://notify-mesh.preview.emergentagent.com/api';
             
             // Update auth status on load
             document.addEventListener('DOMContentLoaded', function() {

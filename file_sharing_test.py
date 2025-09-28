@@ -12,7 +12,7 @@ import time
 from datetime import datetime
 
 # Backend URL from environment
-BACKEND_URL = "https://evcrm-saas.preview.emergentagent.com/api"
+BACKEND_URL = "https://notify-mesh.preview.emergentagent.com/api"
 
 # Global variables
 access_token = ""

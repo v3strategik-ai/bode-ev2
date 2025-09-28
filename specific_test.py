@@ -9,7 +9,7 @@ import json
 import sys
 
 # Backend URL from environment
-BACKEND_URL = "https://evcrm-saas.preview.emergentagent.com/api"
+BACKEND_URL = "https://notify-mesh.preview.emergentagent.com/api"
 
 def test_specific_lead_scoring():
     """Test AI Lead Scoring with the exact sample data from review request"""

@@ -7,7 +7,7 @@ import requests
 import json
 import sys
 
-BACKEND_URL = "https://evcrm-saas.preview.emergentagent.com/api"
+BACKEND_URL = "https://notify-mesh.preview.emergentagent.com/api"
 
 def test_database_collections():
     """Test that all MongoDB collections are accessible and working"""

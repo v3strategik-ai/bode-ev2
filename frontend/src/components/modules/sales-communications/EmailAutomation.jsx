@@ -15,7 +15,7 @@ import {
   Mail, 
   Send, 
   Bot, 
-  Template, 
+  FileText, 
   Users,
   Eye,
   Clock,

@@ -1,6 +1,9 @@
-import React from 'react';
-import { MessageSquare, Phone, Mail, Clock } from 'lucide-react';
+import React, { useState } from 'react';
+import { MessageSquare, Phone, Mail, Clock, AlertCircle, CheckCircle, User, Calendar } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { useNotifications } from '../../contexts/NotificationContext';
+import dialerService from '../../services/communications/dialerService';
+import emailService from '../../services/communications/emailService';
 
 const CustomerSupport = () => {
   return (

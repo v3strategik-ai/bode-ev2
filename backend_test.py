@@ -768,7 +768,16 @@ def main():
         ("File Access Control", test_file_access_control),
         ("S3 Integration Status", test_s3_integration_status),
         ("Database Integration", test_database_integration),
-        ("File Deletion", test_file_deletion)
+        ("File Deletion", test_file_deletion),
+        
+        # Email Automation Tests (Sales Communications Phase 1)
+        ("Email Service Status", test_email_service_status),
+        ("Email Lead Follow-up", test_email_lead_followup),
+        ("AI Email Generation", test_ai_email_generation),
+        
+        # Dialer Tests (Sales Communications Phase 1)
+        ("Dialer Service Status", test_dialer_service_status),
+        ("Dialer Make Call", test_dialer_make_call)
     ]
     
     for test_name, test_func in tests:

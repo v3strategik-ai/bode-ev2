@@ -207,7 +207,7 @@ class AIEmailService:
                 </div>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px;">
-                    {content.replace('\n', '<br>')}
+                    {content.replace(chr(10), '<br>')}
                 </div>
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">

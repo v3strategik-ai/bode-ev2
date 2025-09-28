@@ -502,6 +502,14 @@ s3_service_instance = S3Service(db)
 import integrations.aws.service
 integrations.aws.service.s3_service = s3_service_instance
 
+# Initialize dialer service (after .env is loaded)
+from integrations.dialer.service import DialerService
+dialer_service_instance = DialerService()
+
+# Update the global dialer_service import
+import integrations.dialer.router
+integrations.dialer.router.dialer_service = dialer_service_instance
+
 # Include sub-routers in API router FIRST
 api_router.include_router(messenger_router)
 api_router.include_router(messenger_test_router)

@@ -18,8 +18,8 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/dialer", tags=["dialer"])
 jwt_bearer = JWTBearer()
 
-# Initialize service
-dialer_service = DialerService()
+# Service will be initialized in server.py and injected here
+dialer_service = None
 
 @router.post("/call", response_model=CallResponse)
 async def make_call(

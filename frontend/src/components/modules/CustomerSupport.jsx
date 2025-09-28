@@ -189,6 +189,87 @@ const CustomerSupport = () => {
           </CardContent>
         </Card>
       </div>
+
+      {/* Support Tickets Table */}
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="flex items-center">
+            <MessageSquare className="h-5 w-5 mr-2" />
+            Active Support Tickets
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Ticket</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Customer</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Priority</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Created</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                {tickets.map((ticket) => (
+                  <tr key={ticket.id} className="hover:bg-gray-50">
+                    <td className="px-6 py-4">
+                      <div>
+                        <p className="font-medium text-gray-900">{ticket.title}</p>
+                        <p className="text-sm text-gray-600">{ticket.id}</p>
+                      </div>
+                    </td>
+                    <td className="px-6 py-4">
+                      <div>
+                        <p className="text-gray-900">{ticket.customer}</p>
+                        <p className="text-sm text-gray-600">{ticket.contact_name}</p>
+                      </div>
+                    </td>
+                    <td className="px-6 py-4">
+                      <span className={`px-3 py-1 rounded-full text-xs font-medium border ${getPriorityColor(ticket.priority)}`}>
+                        {ticket.priority.toUpperCase()}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4">
+                      <span className={`px-3 py-1 rounded-full text-xs font-medium border ${getStatusColor(ticket.status)}`}>
+                        {ticket.status.toUpperCase()}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="text-gray-400" size={16} />
+                        <span className="text-sm">{ticket.created}</span>
+                      </div>
+                    </td>
+                    <td className="px-6 py-4">
+                      <div className="flex gap-2">
+                        <button 
+                          onClick={() => handleCallCustomer(ticket)}
+                          className="text-blue-600 hover:bg-blue-50 p-2 rounded"
+                          title={`Call ${ticket.contact_name}`}
+                        >
+                          <Phone size={16} />
+                        </button>
+                        <button 
+                          onClick={() => handleEmailCustomer(ticket)}
+                          className="text-green-600 hover:bg-green-50 p-2 rounded"
+                          title={`Email ${ticket.contact_name}`}
+                        >
+                          <Mail size={16} />
+                        </button>
+                        <button className="text-gray-600 hover:bg-gray-50 p-2 rounded" title="View details">
+                          <User size={16} />
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };

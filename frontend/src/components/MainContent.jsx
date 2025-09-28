@@ -10,6 +10,7 @@ import ExecutiveDashboard from './ExecutiveDashboard';
 import LeadGenerationHub from './modules/LeadGenerationHub';
 import QuoteManagementSystem from './modules/QuoteManagementSystem';
 import TeamMessenger from './modules/TeamMessenger';
+import SalesCommunicationsHub from './modules/sales-communications/SalesCommunicationsHub';
 
 const MainContent = () => {
   const [activeTab, setActiveTab] = useState('dashboard');

@@ -358,6 +358,20 @@ const QuoteManagementSystem = () => {
                       <button className="text-green-600 hover:bg-green-50 p-2 rounded">
                         <Send size={16} />
                       </button>
+                      <button 
+                        onClick={() => handleCallQuote(quote)}
+                        className="text-purple-600 hover:bg-purple-50 p-2 rounded"
+                        title="Call customer"
+                      >
+                        <Phone size={16} />
+                      </button>
+                      <button 
+                        onClick={() => handleEmailQuote(quote)}
+                        className="text-orange-600 hover:bg-orange-50 p-2 rounded"
+                        title="Email customer"
+                      >
+                        <Mail size={16} />
+                      </button>
                     </div>
                   </td>
                 </tr>

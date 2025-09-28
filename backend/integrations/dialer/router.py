@@ -66,7 +66,7 @@ async def make_bulk_calls(
     Make multiple calls in bulk (processed in background)
     """
     try:
-        user_id = current_user.get("user_id", "unknown")
+        user_id = current_user if isinstance(current_user, str) else current_user.get("user_id", "unknown")
         
         if request.schedule_time and request.schedule_time > datetime.now(timezone.utc):
             # Schedule for later (would be implemented with a task queue)

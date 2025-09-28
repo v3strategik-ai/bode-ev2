@@ -507,6 +507,8 @@ api_router.include_router(messenger_router)
 api_router.include_router(messenger_test_router)
 api_router.include_router(s3_router)
 api_router.include_router(files_test_router)
+api_router.include_router(email_router)
+api_router.include_router(dialer_router)
 
 # Then include the main API router in the app
 app.include_router(api_router)

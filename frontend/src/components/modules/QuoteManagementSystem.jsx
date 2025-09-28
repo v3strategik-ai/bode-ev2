@@ -126,6 +126,85 @@ const QuoteManagementSystem = () => {
     }
   };
 
+  // Handler for calling quote contacts
+  const handleCallQuote = async (quote) => {
+    if (!quote?.contact_phone) {
+      addNotification({
+        id: `no-phone-${Date.now()}`,
+        type: 'error',
+        title: 'No Phone Number',
+        message: `Phone number not available for ${quote?.client || 'this client'}`
+      });
+      return;
+    }
+
+    try {
+      const result = await dialerService.makeCall({
+        to_number: dialerService.formatPhoneNumber(quote.contact_phone),
+        purpose: 'quote_follow_up',
+        notes: `Quote follow-up call - ${quote.project} (${quote.id}) - ${quote.client} (${quote.value})`
+      });
+
+      if (result.success) {
+        addNotification({
+          id: `call-initiated-${Date.now()}`,
+          type: 'success',
+          title: 'Call Initiated',
+          message: `Calling ${quote.contact_name} at ${quote.client} about quote ${quote.id}`
+        });
+      }
+    } catch (error) {
+      console.error('Failed to call quote contact:', error);
+      addNotification({
+        id: `call-failed-${Date.now()}`,
+        type: 'error',
+        title: 'Call Failed',
+        message: 'Failed to initiate call. Please try again.'
+      });
+    }
+  };
+
+  // Handler for emailing quote follow-ups
+  const handleEmailQuote = async (quote) => {
+    if (!quote?.contact_email) {
+      addNotification({
+        id: `no-email-${Date.now()}`,
+        type: 'error',
+        title: 'No Email Address',
+        message: `Email address not available for ${quote?.client || 'this client'}`
+      });
+      return;
+    }
+
+    try {
+      const result = await emailService.sendQuoteFollowUp({
+        customer_email: quote.contact_email,
+        customer_name: quote.contact_name || quote.client,
+        quote_amount: quote.value,
+        quote_id: quote.id,
+        valid_until: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toLocaleDateString(), // 30 days from now
+        sales_rep: 'BODE EV Sales Team'
+      });
+
+      if (result.success) {
+        addNotification({
+          id: `email-sent-${Date.now()}`,
+          type: 'success',
+          title: 'Quote Email Sent',
+          message: `Quote follow-up email sent to ${quote.contact_name} at ${quote.client}`
+        });
+      }
+    } catch (error) {
+      console.error('Failed to email quote:', error);
+      addNotification({
+        id: `email-failed-${Date.now()}`,
+        type: 'error',
+        title: 'Email Failed',
+        message: 'Failed to send quote email. Please try again.'
+      });
+    }
+  };
+
   const products = [
     { id: 'EV150', name: 'BODE EV FastCharge Pro 150kW', basePrice: 45000 },
     { id: 'EV250', name: 'BODE EV UltraCharge 250kW', basePrice: 75000 }

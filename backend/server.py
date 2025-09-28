@@ -502,6 +502,17 @@ s3_service_instance = S3Service(db)
 import integrations.aws.service
 integrations.aws.service.s3_service = s3_service_instance
 
+# Initialize email services (after .env is loaded)
+from integrations.email.service import EmailService
+from integrations.email.ai_service import AIEmailService
+email_service_instance = EmailService()
+ai_email_service_instance = AIEmailService()
+
+# Update the global email_service imports
+import integrations.email.router
+integrations.email.router.email_service = email_service_instance
+integrations.email.router.ai_email_service = ai_email_service_instance
+
 # Initialize dialer service (after .env is loaded)
 from integrations.dialer.service import DialerService
 dialer_service_instance = DialerService()

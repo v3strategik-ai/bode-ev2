@@ -505,7 +505,7 @@ const EmailAutomation = () => {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center">
-              <Template className="h-5 w-5 mr-2" />
+              <FileText className="h-5 w-5 mr-2" />
               Email Templates
             </CardTitle>
           </CardHeader>

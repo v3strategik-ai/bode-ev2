@@ -285,6 +285,17 @@ const MainContent = () => {
           <MessageCircle className="h-4 w-4 mr-2 inline" />
           Team Messenger
         </button>
+        <button
+          onClick={() => setActiveTab('communications')}
+          className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${
+            activeTab === 'communications' 
+              ? 'bg-white text-blue-600 shadow-md' 
+              : 'text-gray-600 hover:text-gray-900'
+          }`}
+        >
+          <Phone className="h-4 w-4 mr-2 inline" />
+          Sales Communications
+        </button>
       </div>
 
       {/* Dynamic Content Based on Active Tab */}

@@ -111,7 +111,7 @@ async def get_call_analytics(
     try:
         # If no specific user_id provided, use current user's analytics
         if not user_id:
-            user_id = current_user.get("user_id")
+            user_id = current_user if isinstance(current_user, str) else current_user.get("user_id")
         
         result = await dialer_service.get_call_analytics(start_date, end_date, user_id)
         return result

@@ -12,9 +12,13 @@ import {
   CheckCircle, 
   AlertCircle,
   Zap,
-  Settings
+  Settings,
+  Phone,
+  Mail
 } from 'lucide-react';
 import { useNotifications } from '../../contexts/NotificationContext';
+import dialerService from '../../services/communications/dialerService';
+import emailService from '../../services/communications/emailService';
 
 const QuoteManagementSystem = () => {
   const [showPricingModal, setShowPricingModal] = useState(false);

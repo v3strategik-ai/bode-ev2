@@ -14,9 +14,14 @@ import {
   Building2,
   Star,
   AlertCircle,
-  CheckCircle
+  CheckCircle,
+  Phone,
+  Mail,
+  Eye
 } from 'lucide-react';
 import { useNotifications } from '../../contexts/NotificationContext';
+import dialerService from '../../services/communications/dialerService';
+import emailService from '../../services/communications/emailService';
 
 const LeadGenerationHub = () => {
   const [leads, setLeads] = useState([]);

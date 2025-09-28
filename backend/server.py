@@ -22,6 +22,10 @@ from integrations.aws.router import router as s3_router
 from integrations.aws.service import S3Service
 from integrations.aws.test_client import test_router as files_test_router
 
+# Import Email and Dialer components  
+from integrations.email.router import router as email_router
+from integrations.dialer.router import router as dialer_router
+
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')

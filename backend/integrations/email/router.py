@@ -21,9 +21,9 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/email", tags=["email"])
 jwt_bearer = JWTBearer()
 
-# Initialize services
-email_service = EmailService()
-ai_email_service = AIEmailService()
+# Services will be initialized in server.py and injected here
+email_service = None
+ai_email_service = None
 
 @router.post("/send", response_model=EmailResponse)
 async def send_email(

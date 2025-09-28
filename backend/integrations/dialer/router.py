@@ -30,7 +30,7 @@ async def make_call(
     Initiate an outbound call
     """
     try:
-        user_id = current_user.get("user_id", "unknown")
+        user_id = current_user if isinstance(current_user, str) else current_user.get("user_id", "unknown")
         result = await dialer_service.make_call(request, user_id)
         return result
     except DialerError as e:

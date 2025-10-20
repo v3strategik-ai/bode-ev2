@@ -93,7 +93,8 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
         </div>
 
         {/* Right section - Actions and time */}
-        <div className="flex items-center space-x-6">
+        <div className="flex flex-col justify-center">
+          <div className="flex items-center space-x-6 mb-2">
           <div className="text-right text-sm bg-gray-50 backdrop-blur-sm rounded-xl px-4 py-2 border border-gray-200">
             <div className="font-mono text-xl font-bold text-gray-900">
               {formatTime(currentTime)}

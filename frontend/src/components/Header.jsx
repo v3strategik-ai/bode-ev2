@@ -50,24 +50,21 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
   return (
     <header className="bg-white border-b border-gray-200 px-6 py-4 shadow-sm">
       <div className="flex items-center justify-between">
-        {/* Left section - BODE EV Logo and title */}
+        {/* Left section - MATIKAI Logo and title */}
         <div className="flex items-center space-x-6">
           <div className="flex items-center space-x-4">
-            <div className="flex items-baseline space-x-1">
-              <span className="bg-green-500 text-white px-3 py-1.5 rounded-lg font-bold text-lg lowercase shadow-md">
-                bode
-              </span>
-              <span className="bg-blue-600 text-white px-2 py-1.5 rounded-md font-bold text-sm uppercase tracking-wider shadow-md">
-                EV
-              </span>
-            </div>
-            <span className="text-xs text-gray-500 font-medium bg-gray-100 px-2 py-1 rounded">Enterprise V3</span>
+            <img 
+              src="/matikai-logo.png" 
+              alt="MATIKAI Logo" 
+              className="h-12 w-auto shadow-lg rounded-lg"
+            />
+            <span className="text-xs text-blue-600 font-medium bg-blue-50 px-3 py-1 rounded-full border border-blue-200">Enterprise AI Platform</span>
           </div>
-          <div className="border-l border-gray-300 pl-6 ml-6">
+          <div className="border-l border-blue-200 pl-6 ml-6">
             <h1 className="text-2xl font-bold text-gray-900">
-              BODE EV Enterprise V3
+              MATIKAI Enterprise AI
             </h1>
-            <p className="text-sm text-gray-600 font-medium">EV charging solutions & sales platform • Lead Generation & Quoting System</p>
+            <p className="text-sm text-gray-600 font-medium">AI-powered business solutions & intelligent automation • Sales & Communications Platform</p>
           </div>
         </div>
 

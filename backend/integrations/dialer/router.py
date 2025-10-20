@@ -169,7 +169,7 @@ async def twiml_sales_call():
     response = VoiceResponse()
     response.say(
         "Hello! This is a call from MATIKAI's sales team. "
-        "We have some exciting updates about our latest EV charging solutions that could benefit your business. "
+        "We have some exciting updates about our latest AI-powered business solutions that could benefit your business. "
         "Please hold while we connect you to one of our sales specialists.",
         voice='alice'
     )

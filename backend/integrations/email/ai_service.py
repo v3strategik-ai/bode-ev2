@@ -119,7 +119,7 @@ class AIEmailService:
             prompt += """
             
             ADDITIONAL GUIDELINES FOR LEAD EMAILS:
-            - Thank them for their interest in EV charging solutions
+            - Thank them for their interest in AI-powered business solutions
             - Mention specific benefits relevant to their industry/business
             - Include next steps (consultation, site assessment, quote)
             - Highlight MATIKAI's expertise and experience
@@ -251,7 +251,7 @@ class AIEmailService:
                     <h2 style="color: #2c5530;">MATIKAI Solutions</h2>
                 </div>
                 
-                <h2 style="color: #2c5530;">Thank you for your interest in EV charging solutions!</h2>
+                <h2 style="color: #2c5530;">Thank you for your interest in AI-powered business solutions!</h2>
                 
                 <p>Dear {request.recipient_name},</p>
                 
@@ -260,7 +260,7 @@ class AIEmailService:
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
                     <h3 style="margin-top: 0; color: #2c5530;">Why Choose MATIKAI?</h3>
                     <ul>
-                        <li><strong>Industry Leaders:</strong> Over 10 years in EV charging solutions</li>
+                        <li><strong>Industry Leaders:</strong> Over 10 years in AI-powered business solutions</li>
                         <li><strong>Certified Installation:</strong> Professional, code-compliant installations</li>
                         <li><strong>Comprehensive Support:</strong> 24/7 monitoring and maintenance</li>
                         <li><strong>ROI Focused:</strong> Solutions that pay for themselves</li>
@@ -355,7 +355,7 @@ class AIEmailService:
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <h2 style="color: #2c5530;">Update from MATIKAI</h2>
                 <p>Dear {request.recipient_name},</p>
-                <p>We have an important update regarding your EV charging solutions.</p>
+                <p>We have an important update regarding your AI-powered business solutions.</p>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
                     <p><strong>Context:</strong> {request.context}</p>

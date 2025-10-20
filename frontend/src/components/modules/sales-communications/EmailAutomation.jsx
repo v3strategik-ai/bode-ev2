@@ -192,7 +192,7 @@ const EmailAutomation = () => {
       lead_follow_up: {
         subject: 'Thank you for your interest in MATIKAI Solutions',
         content: `<p>Dear [Customer Name],</p>
-        <p>Thank you for your interest in our EV charging solutions...</p>`
+        <p>Thank you for your interest in our AI-powered business solutions...</p>`
       },
       quote_follow_up: {
         subject: 'Your MATIKAI Quote - Next Steps',

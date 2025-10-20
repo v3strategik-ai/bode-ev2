@@ -145,7 +145,7 @@ class EmailService:
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">
                     MATIKAI - Leading provider of electric vehicle charging solutions<br>
-                    This email was sent because you expressed interest in our EV charging solutions.
+                    This email was sent because you expressed interest in our AI-powered business solutions.
                 </p>
             </div>
         </body>

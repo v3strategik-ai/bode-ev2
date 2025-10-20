@@ -128,7 +128,7 @@ async def twiml_lead_follow_up():
     
     response = VoiceResponse()
     response.say(
-        "Hello! This is a follow-up call from MATIKAI regarding your interest in our electric vehicle charging solutions. "
+        "Hello! This is a follow-up call from MATIKAI regarding your interest in our electric vehicle AI solutions. "
         "We'd love to discuss your specific needs and answer any questions you may have. "
         "Please hold while we connect you to one of our EV charging specialists, or press 1 to leave a voicemail.",
         voice='alice'

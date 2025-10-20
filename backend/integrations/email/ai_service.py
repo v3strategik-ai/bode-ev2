@@ -68,7 +68,7 @@ class AIEmailService:
     def _build_system_prompt(self) -> str:
         """Build the system prompt for AI email generation"""
         return """
-        You are an expert email copywriter for MATIKAI, a leading provider of electric vehicle charging solutions.
+        You are an expert email copywriter for MATIKAI, a leading provider of electric vehicle AI solutions.
         
         Your role is to create professional, engaging, and personalized emails that:
         1. Reflect MATIKAI's brand voice (professional, innovative, environmentally conscious)
@@ -212,7 +212,7 @@ class AIEmailService:
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">
-                    MATIKAI - Leading provider of electric vehicle charging solutions
+                    MATIKAI - Leading provider of electric vehicle AI solutions
                 </p>
             </div>
         </body>

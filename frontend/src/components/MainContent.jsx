@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Zap, DollarSign, TrendingUp, Activity, Target, Users, FileText, Calculator, Calendar, MapPin, BarChart3, MessageCircle, Phone } from 'lucide-react';
+import { Zap, DollarSign, TrendingUp, Activity, Target, Users, FileText, Calculator, Calendar, MapPin, BarChart3, MessageCircle, Phone, Brain } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Input } from './ui/input';

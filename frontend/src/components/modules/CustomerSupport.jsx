@@ -32,7 +32,7 @@ const CustomerSupport = () => {
       priority: 'medium',
       status: 'in-progress',
       created: '2025-09-28 08:30',
-      category: 'installation'
+      category: 'implementation'
     },
     {
       id: 'T-2025-003',

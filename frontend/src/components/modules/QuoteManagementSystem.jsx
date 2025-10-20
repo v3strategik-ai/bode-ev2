@@ -34,7 +34,7 @@ const QuoteManagementSystem = () => {
     customer_type: 'commercial',
     quantity: 1,
     location: '',
-    installation_complexity: 'moderate',
+    implementation_complexity: 'moderate',
     timeline: 'immediate',
     competitor_pricing: null
   });
@@ -456,8 +456,8 @@ const QuoteManagementSystem = () => {
                     Installation Complexity
                   </label>
                   <select
-                    value={pricingRequest.installation_complexity}
-                    onChange={(e) => setPricingRequest({ ...pricingRequest, installation_complexity: e.target.value })}
+                    value={pricingRequest.implementation_complexity}
+                    onChange={(e) => setPricingRequest({ ...pricingRequest, implementation_complexity: e.target.value })}
                     className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-green-500 focus:border-green-500"
                   >
                     <option value="simple">Simple</option>

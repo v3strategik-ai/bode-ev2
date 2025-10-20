@@ -37,7 +37,7 @@ const ExecutiveDashboard = () => {
       change: '+18.7%',
       trend: 'up',
       icon: TrendingUp,
-      subtitle: 'Per installation project',
+      subtitle: 'Per implementation project',
       forecast: '$920K projected'
     },
     {

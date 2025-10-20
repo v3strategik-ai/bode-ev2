@@ -254,7 +254,7 @@ class EmailService:
                 
                 <p><strong>What's Included:</strong></p>
                 <ul>
-                    <li>Professional installation by certified technicians</li>
+                    <li>Professional implementation by certified technicians</li>
                     <li>All necessary electrical work and permits</li>
                     <li>2-year comprehensive warranty</li>
                     <li>24/7 customer support</li>

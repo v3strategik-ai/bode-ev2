@@ -80,7 +80,7 @@ class PricingRequest(BaseModel):
     customer_type: str  # "commercial", "residential", "government"
     quantity: int
     location: str
-    installation_complexity: str  # "simple", "moderate", "complex"
+    implementation_complexity: str  # "simple", "moderate", "complex"
     timeline: str
     competitor_pricing: Optional[float] = None
 
@@ -238,7 +238,7 @@ async def get_pricing_recommendation(pricing_request: PricingRequest):
         Customer Type: {pricing_request.customer_type}
         Quantity: {pricing_request.quantity}
         Location: {pricing_request.location}
-        Installation Complexity: {pricing_request.installation_complexity}
+        Installation Complexity: {pricing_request.implementation_complexity}
         Timeline: {pricing_request.timeline}
         Competitor Pricing: ${pricing_request.competitor_pricing or 'Unknown'}
         

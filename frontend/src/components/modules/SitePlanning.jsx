@@ -9,7 +9,7 @@ const SitePlanning = () => {
         <Target className="h-8 w-8 mr-3 text-purple-600" />
         <div>
           <h1 className="text-3xl font-bold text-gray-900">Site Planning</h1>
-          <p className="text-gray-600">Strategic site selection and installation planning</p>
+          <p className="text-gray-600">Strategic site selection and implementation planning</p>
         </div>
       </div>
       

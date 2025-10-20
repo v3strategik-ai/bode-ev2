@@ -9,7 +9,7 @@ const InstallationJobs = () => {
         <Briefcase className="h-8 w-8 mr-3 text-orange-600" />
         <div>
           <h1 className="text-3xl font-bold text-gray-900">Installation Jobs</h1>
-          <p className="text-gray-600">Manage installation projects and job scheduling</p>
+          <p className="text-gray-600">Manage implementation projects and job scheduling</p>
         </div>
       </div>
       
@@ -36,7 +36,7 @@ const InstallationJobs = () => {
           </CardHeader>
           <CardContent>
             <p className="text-3xl font-bold text-green-600">234</p>
-            <p className="text-sm text-gray-600">Successful installations</p>
+            <p className="text-sm text-gray-600">Successful implementations</p>
           </CardContent>
         </Card>
 

@@ -169,7 +169,7 @@ class EmailService {
       { value: 'lead_follow_up', label: 'Lead Follow-up' },
       { value: 'quote_follow_up', label: 'Quote Follow-up' },
       { value: 'service_appointment', label: 'Service Appointment' },
-      { value: 'installation_scheduling', label: 'Installation Scheduling' },
+      { value: 'implementation_scheduling', label: 'Installation Scheduling' },
       { value: 'warranty_information', label: 'Warranty Information' },
       { value: 'payment_reminder', label: 'Payment Reminder' },
       { value: 'product_update', label: 'Product Update' },

@@ -255,23 +255,23 @@ class AIEmailService:
                 
                 <p>Dear {request.recipient_name},</p>
                 
-                <p>Thank you for reaching out to MATIKAI! We're excited to help you transition to electric vehicle AI infrastructure.</p>
+                <p>Thank you for reaching out to MATIKAI! We're excited to help you transform your business operations with advanced AI automation solutions.</p>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
                     <h3 style="margin-top: 0; color: #2c5530;">Why Choose MATIKAI?</h3>
                     <ul>
-                        <li><strong>Industry Leaders:</strong> Over 10 years in AI-powered business solutions</li>
-                        <li><strong>Certified Installation:</strong> Professional, code-compliant installations</li>
-                        <li><strong>Comprehensive Support:</strong> 24/7 monitoring and maintenance</li>
-                        <li><strong>ROI Focused:</strong> Solutions that pay for themselves</li>
+                        <li><strong>Industry Leaders:</strong> Over 10 years in business automation & AI solutions</li>
+                        <li><strong>Expert Implementation:</strong> Professional, seamless integration processes</li>
+                        <li><strong>Comprehensive Support:</strong> 24/7 AI monitoring and optimization</li>
+                        <li><strong>ROI Focused:</strong> Solutions that deliver measurable business value</li>
                     </ul>
                 </div>
                 
                 <p><strong>Next Steps:</strong></p>
                 <ul>
-                    <li>Schedule a free consultation to assess your needs</li>
-                    <li>Receive a customized proposal within 48 hours</li>
-                    <li>Take advantage of current federal and state incentives</li>
+                    <li>Schedule a free consultation to assess your automation needs</li>
+                    <li>Receive a customized AI solution proposal within 48 hours</li>
+                    <li>Explore available implementation packages and pricing</li>
                 </ul>
                 
                 <div style="text-align: center; margin: 30px 0;">

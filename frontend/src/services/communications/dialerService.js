@@ -187,7 +187,7 @@ class DialerService {
         status: 'completed',
         duration: 185,
         start_time: new Date(Date.now() - 3600000),
-        customer_name: 'Tesla Fleet Operations',
+        customer_name: 'TechCorp Solutions',
         cost: '$6.17'
       },
       {

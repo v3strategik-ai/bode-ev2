@@ -13,7 +13,7 @@ const CustomerSupport = () => {
     {
       id: 'T-2025-001',
       title: 'Charging Station Not Working',
-      customer: 'Tesla Fleet Operations',
+      customer: 'TechCorp Solutions',
       contact_name: 'Sarah Johnson',
       contact_email: 's.johnson@tesla.com',
       contact_phone: '+15551234567',

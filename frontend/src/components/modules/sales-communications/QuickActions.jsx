@@ -124,7 +124,7 @@ const QuickActions = () => {
 
   const recentContacts = [
     {
-      name: 'Tesla Fleet Operations',
+      name: 'TechCorp Solutions',
       email: 'fleet@tesla.com',
       phone: '+15551234567',
       lastContact: '2 hours ago',

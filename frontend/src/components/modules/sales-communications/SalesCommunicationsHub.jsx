@@ -218,7 +218,7 @@ const SalesCommunicationsHub = () => {
                     <div className="flex items-center">
                       <Phone className="h-4 w-4 mr-2 text-blue-600" />
                       <div>
-                        <p className="font-medium">Called Tesla Fleet Operations</p>
+                        <p className="font-medium">Called TechCorp Solutions</p>
                         <p className="text-sm text-muted-foreground">3 minutes ago</p>
                       </div>
                     </div>

@@ -69,10 +69,10 @@ const QuoteManagementSystem = () => {
     },
     {
       id: 'Q-2025-003',
-      project: 'City Transit Hub',
-      client: 'Metro Transit Authority',
+      project: 'Smart Analytics Dashboard',
+      client: 'GlobalTech Enterprises',
       contact_name: 'Lisa Rodriguez',
-      contact_email: 'l.rodriguez@metrotransit.gov',
+      contact_email: 'l.rodriguez@globaltech.com',
       contact_phone: '+15555551234',
       value: '$1.2M', 
       stations: 32,

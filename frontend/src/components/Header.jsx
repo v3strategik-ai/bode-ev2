@@ -128,29 +128,29 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
           onClick={handleQuoteRequest}
           className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-0"
         >
-          <span className="mr-3 text-lg">💰</span>
-          Create Quote
+          <span className="mr-3 text-lg">💼</span>
+          AI Proposals
         </Button>
         <Button 
           onClick={handleLeadGeneration}
-          className="bg-green-500 hover:bg-green-600 text-white px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-0"
+          className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-0"
         >
-          <span className="mr-3">🎯</span>
-          Generate Leads
+          <span className="mr-3">🤖</span>
+          AI Lead Gen
         </Button>
         <Button 
           onClick={handleReportGeneration}
-          className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-0"
+          className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-0"
         >
           <span className="mr-3">📊</span>
-          Sales Report
+          AI Analytics
         </Button>
         <Button 
           onClick={handleSettings}
-          className="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-0"
+          className="bg-slate-600 hover:bg-slate-700 text-white px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-0"
         >
           <span className="mr-3">⚙️</span>
-          Settings
+          AI Settings
         </Button>
       </div>
     </header>

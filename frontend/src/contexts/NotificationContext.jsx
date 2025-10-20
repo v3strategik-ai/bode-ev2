@@ -67,7 +67,7 @@ export const NotificationProvider = ({ children }) => {
 
     // Browser notification for critical alerts (if permission granted)
     if (notification.priority === 'critical' && 'Notification' in window && Notification.permission === 'granted') {
-      new Notification(`BODE EV: ${notification.title}`, {
+      new Notification(`MATIKAI: ${notification.title}`, {
         body: notification.message,
         icon: '/favicon.ico'
       });

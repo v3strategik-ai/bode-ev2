@@ -1,6 +1,6 @@
 /**
  * Email Automation Component
- * Handles email templates, AI generation, and campaigns for BODE EV
+ * Handles email templates, AI generation, and campaigns for MATIKAI
  */
 
 import React, { useState, useEffect } from 'react';
@@ -69,7 +69,7 @@ const EmailAutomation = () => {
       {
         id: '2',
         to_email: 'contact@ecocharge.com',
-        subject: 'Your BODE EV Quote #BODE-12345',
+        subject: 'Your MATIKAI Quote #BODE-12345',
         status: 'delivered',
         sent_time: new Date(Date.now() - 7200000),
         opened: true,
@@ -190,12 +190,12 @@ const EmailAutomation = () => {
   const loadTemplate = (templateType) => {
     const templates = {
       lead_follow_up: {
-        subject: 'Thank you for your interest in BODE EV Solutions',
+        subject: 'Thank you for your interest in MATIKAI Solutions',
         content: `<p>Dear [Customer Name],</p>
         <p>Thank you for your interest in our EV charging solutions...</p>`
       },
       quote_follow_up: {
-        subject: 'Your BODE EV Quote - Next Steps',
+        subject: 'Your MATIKAI Quote - Next Steps',
         content: `<p>Dear [Customer Name],</p>
         <p>Following up on the quote we recently sent you...</p>`
       },

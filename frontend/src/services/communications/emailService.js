@@ -1,5 +1,5 @@
 /**
- * Email Service for BODE EV Frontend
+ * Email Service for MATIKAI Frontend
  * Handles all email automation API calls
  */
 

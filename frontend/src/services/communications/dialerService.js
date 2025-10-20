@@ -1,5 +1,5 @@
 /**
- * Dialer Service for BODE EV Frontend
+ * Dialer Service for MATIKAI Frontend
  * Handles all dialer/calling API calls
  */
 

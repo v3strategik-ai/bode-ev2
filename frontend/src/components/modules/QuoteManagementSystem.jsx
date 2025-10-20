@@ -206,8 +206,8 @@ const QuoteManagementSystem = () => {
   };
 
   const products = [
-    { id: 'EV150', name: 'BODE EV FastCharge Pro 150kW', basePrice: 45000 },
-    { id: 'EV250', name: 'BODE EV UltraCharge 250kW', basePrice: 75000 }
+    { id: 'EV150', name: 'MATIKAI FastCharge Pro 150kW', basePrice: 45000 },
+    { id: 'EV250', name: 'MATIKAI UltraCharge 250kW', basePrice: 75000 }
   ];
 
   return (

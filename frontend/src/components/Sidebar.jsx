@@ -45,7 +45,7 @@ const Sidebar = ({ activeModule, onModuleChange }) => {
       {/* Header */}
       <div className="p-6 border-b border-gray-200/50 bg-gradient-to-br from-green-50/50 to-white/30 backdrop-blur-sm">
         <div className="text-xs text-gray-500 mb-3 font-medium uppercase tracking-wider">
-          BODE EV Sales Platform • Charging Solutions Provider
+          MATIKAI Sales Platform • Charging Solutions Provider
         </div>
         <div className="font-bold text-gray-900 text-lg bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
           CORE MODULES

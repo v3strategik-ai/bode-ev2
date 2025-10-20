@@ -1,5 +1,5 @@
 """
-Email Models for BODE EV CRM System
+Email Models for MATIKAI CRM System
 """
 
 from pydantic import BaseModel, EmailStr
@@ -43,7 +43,7 @@ class LeadFollowUpRequest(BaseModel):
     lead_name: str
     lead_score: int
     estimated_value: str
-    sales_rep: str = "BODE EV Team"
+    sales_rep: str = "MATIKAI Team"
 
 class ServiceRequestConfirmation(BaseModel):
     customer_email: EmailStr
@@ -58,7 +58,7 @@ class QuoteFollowUpRequest(BaseModel):
     quote_amount: str
     quote_id: str
     valid_until: str
-    sales_rep: str = "BODE EV Sales Team"
+    sales_rep: str = "MATIKAI Sales Team"
 
 class BulkEmailRequest(BaseModel):
     recipients: List[EmailStr]

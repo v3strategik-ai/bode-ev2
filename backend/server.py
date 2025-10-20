@@ -144,7 +144,7 @@ def get_ai_chat(session_id: str = "ai_analytics"):
     return LlmChat(
         api_key=os.environ.get("EMERGENT_LLM_KEY"),
         session_id=session_id,
-        system_message="You are an AI analytics expert for BODE EV, specializing in lead scoring, pricing optimization, demand forecasting, and customer lifetime value predictions for EV charging station sales."
+        system_message="You are an AI analytics expert for MATIKAI, specializing in lead scoring, pricing optimization, demand forecasting, and customer lifetime value predictions for EV charging station sales."
     ).with_model("openai", "gpt-4o")
 
 # AI Lead Scoring Endpoint
@@ -154,7 +154,7 @@ async def score_lead(lead_data: LeadData):
         chat = get_ai_chat("lead_scoring")
         
         prompt = f"""
-        Analyze this lead and provide a comprehensive scoring (0-100) for BODE EV charging station sales:
+        Analyze this lead and provide a comprehensive scoring (0-100) for MATIKAI charging station sales:
         
         Company: {lead_data.company_name}
         Industry: {lead_data.industry}
@@ -232,7 +232,7 @@ async def get_pricing_recommendation(pricing_request: PricingRequest):
         chat = get_ai_chat("pricing_optimization")
         
         prompt = f"""
-        Provide dynamic pricing recommendation for BODE EV charging station:
+        Provide dynamic pricing recommendation for MATIKAI charging station:
         
         Product ID: {pricing_request.product_id}
         Customer Type: {pricing_request.customer_type}
@@ -311,7 +311,7 @@ async def get_demand_forecast(forecast_request: ForecastRequest):
         chat = get_ai_chat("demand_forecasting")
         
         prompt = f"""
-        Generate seasonal demand forecast for BODE EV charging stations:
+        Generate seasonal demand forecast for MATIKAI charging stations:
         
         Product Category: {forecast_request.product_category}
         Region: {forecast_request.region}
@@ -387,7 +387,7 @@ async def predict_customer_lifetime_value(customer_data: CustomerData):
         chat = get_ai_chat("clv_prediction")
         
         prompt = f"""
-        Predict Customer Lifetime Value for BODE EV customer:
+        Predict Customer Lifetime Value for MATIKAI customer:
         
         Customer ID: {customer_data.customer_id}
         Acquisition Cost: ${customer_data.acquisition_cost:,.2f}

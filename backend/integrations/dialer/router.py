@@ -1,5 +1,5 @@
 """
-Dialer Router for BODE EV CRM System
+Dialer Router for MATIKAI CRM System
 FastAPI endpoints for Twilio Voice API integration
 """
 
@@ -128,7 +128,7 @@ async def twiml_lead_follow_up():
     
     response = VoiceResponse()
     response.say(
-        "Hello! This is a follow-up call from BODE EV regarding your interest in our electric vehicle charging solutions. "
+        "Hello! This is a follow-up call from MATIKAI regarding your interest in our electric vehicle charging solutions. "
         "We'd love to discuss your specific needs and answer any questions you may have. "
         "Please hold while we connect you to one of our EV charging specialists, or press 1 to leave a voicemail.",
         voice='alice'
@@ -148,7 +148,7 @@ async def twiml_customer_service():
     
     response = VoiceResponse()
     response.say(
-        "Thank you for calling BODE EV customer service. "
+        "Thank you for calling MATIKAI customer service. "
         "We're here to help with any questions about your EV charging equipment or service needs. "
         "Please hold while we connect you to a customer service representative.",
         voice='alice'
@@ -168,7 +168,7 @@ async def twiml_sales_call():
     
     response = VoiceResponse()
     response.say(
-        "Hello! This is a call from BODE EV's sales team. "
+        "Hello! This is a call from MATIKAI's sales team. "
         "We have some exciting updates about our latest EV charging solutions that could benefit your business. "
         "Please hold while we connect you to one of our sales specialists.",
         voice='alice'
@@ -185,7 +185,7 @@ async def twiml_quote_follow_up():
     
     response = VoiceResponse()
     response.say(
-        "Hello! This is a follow-up call from BODE EV regarding the quote we recently sent you. "
+        "Hello! This is a follow-up call from MATIKAI regarding the quote we recently sent you. "
         "We wanted to answer any questions you might have and discuss next steps. "
         "Please hold while we connect you to your dedicated sales representative.",
         voice='alice'
@@ -199,7 +199,7 @@ async def get_dialer_service_status():
     Get dialer service status and configuration
     """
     return {
-        "service_name": "BODE EV Dialer Service",
+        "service_name": "MATIKAI Dialer Service",
         "twilio_configured": not dialer_service.mock_mode,
         "mock_mode": dialer_service.mock_mode,
         "phone_number": dialer_service.phone_number if not dialer_service.mock_mode else "Mock: +15551234567",

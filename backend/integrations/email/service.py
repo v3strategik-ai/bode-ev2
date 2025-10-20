@@ -63,7 +63,7 @@ class EmailService:
             
             # Create SendGrid mail object
             mail = Mail(
-                from_email=From(sender, "BODE EV Team"),
+                from_email=From(sender, "MATIKAI Team"),
                 to_emails=To(to_email),
                 subject=Subject(subject)
             )
@@ -92,7 +92,7 @@ class EmailService:
                                       lead_name: str, 
                                       lead_score: int,
                                       estimated_value: str,
-                                      sales_rep: str = "BODE EV Team") -> EmailResponse:
+                                      sales_rep: str = "MATIKAI Team") -> EmailResponse:
         """
         Send automated lead follow-up email
         """
@@ -103,7 +103,7 @@ class EmailService:
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <img src="https://bodeev.com/logo.png" alt="BODE EV" style="height: 60px;">
+                    <img src="https://bodeev.com/logo.png" alt="MATIKAI" style="height: 60px;">
                 </div>
                 
                 <h2 style="color: #2563eb;">Thank you for your interest in MATIKAI AI Solutions!</h2>
@@ -138,13 +138,13 @@ class EmailService:
                 
                 <p>Best regards,<br>
                 {sales_rep}<br>
-                BODE EV Solutions<br>
+                MATIKAI Solutions<br>
                 Email: {self.sender_email}<br>
                 Phone: (555) 123-4567</p>
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">
-                    BODE EV - Leading provider of electric vehicle charging solutions<br>
+                    MATIKAI - Leading provider of electric vehicle charging solutions<br>
                     This email was sent because you expressed interest in our EV charging solutions.
                 </p>
             </div>
@@ -170,7 +170,7 @@ class EmailService:
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <img src="https://bodeev.com/logo.png" alt="BODE EV" style="height: 60px;">
+                    <img src="https://bodeev.com/logo.png" alt="MATIKAI" style="height: 60px;">
                 </div>
                 
                 <h2 style="color: #2c5530;">Service Request Confirmed</h2>
@@ -205,11 +205,11 @@ class EmailService:
                 <p>If you need to reschedule or have questions, please contact our service team at service@bodeev.com or call (555) 123-4567.</p>
                 
                 <p>Best regards,<br>
-                BODE EV Service Team</p>
+                MATIKAI Service Team</p>
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">
-                    BODE EV Service Excellence - Your trusted EV charging partner<br>
+                    MATIKAI Service Excellence - Your trusted EV charging partner<br>
                     Service hours: Monday-Friday 8AM-6PM, Saturday 9AM-3PM
                 </p>
             </div>
@@ -225,25 +225,25 @@ class EmailService:
                                  quote_amount: str,
                                  quote_id: str,
                                  valid_until: str,
-                                 sales_rep: str = "BODE EV Sales Team") -> EmailResponse:
+                                 sales_rep: str = "MATIKAI Sales Team") -> EmailResponse:
         """
         Send quote follow-up email
         """
-        subject = f"Your BODE EV Quote #{quote_id} - {quote_amount}"
+        subject = f"Your MATIKAI Quote #{quote_id} - {quote_amount}"
         
         html_content = f"""
         <html>
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <img src="https://bodeev.com/logo.png" alt="BODE EV" style="height: 60px;">
+                    <img src="https://bodeev.com/logo.png" alt="MATIKAI" style="height: 60px;">
                 </div>
                 
                 <h2 style="color: #2c5530;">Your Custom EV Charging Quote is Ready!</h2>
                 
                 <p>Dear {customer_name},</p>
                 
-                <p>Thank you for choosing BODE EV for your electric vehicle charging needs. We've prepared a custom quote based on your requirements.</p>
+                <p>Thank you for choosing MATIKAI for your electric vehicle charging needs. We've prepared a custom quote based on your requirements.</p>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
                     <h3 style="margin-top: 0; color: #2c5530;">Quote Summary</h3>
@@ -281,11 +281,11 @@ class EmailService:
                 
                 <p>Best regards,<br>
                 {sales_rep}<br>
-                BODE EV Solutions</p>
+                MATIKAI Solutions</p>
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">
-                    BODE EV - Powering the future of transportation<br>
+                    MATIKAI - Powering the future of transportation<br>
                     Quote expires on {valid_until}. Contact us to extend if needed.
                 </p>
             </div>

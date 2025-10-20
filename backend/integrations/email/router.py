@@ -1,5 +1,5 @@
 """
-Email Router for BODE EV CRM System
+Email Router for MATIKAI CRM System
 FastAPI endpoints for email automation and AI generation
 """
 
@@ -222,7 +222,7 @@ async def get_email_service_status():
     Get email service status and configuration
     """
     return {
-        "service_name": "BODE EV Email Service",
+        "service_name": "MATIKAI Email Service",
         "sendgrid_configured": not email_service.mock_mode,
         "ai_configured": not ai_email_service.mock_mode,
         "mock_mode": email_service.mock_mode,

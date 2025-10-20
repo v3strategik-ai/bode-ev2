@@ -34,7 +34,7 @@ const TeamMessenger = () => {
       <div className="space-y-6">
         <div className="text-center">
           <h2 className="text-2xl font-bold tracking-tight">Team Messenger</h2>
-          <p className="text-gray-600">Connect with your BODE EV team in real-time</p>
+          <p className="text-gray-600">Connect with your MATIKAI team in real-time</p>
         </div>
         <AuthContainer onAuthSuccess={() => {
           // Authentication success is handled by the context
@@ -84,7 +84,7 @@ const TeamMessenger = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <MessageCircle className="h-5 w-5 text-blue-600" />
-              <CardTitle>BODE EV Team Communication</CardTitle>
+              <CardTitle>MATIKAI Team Communication</CardTitle>
             </div>
             <div className="flex space-x-2">
               <Button variant="outline" size="sm">

@@ -12,7 +12,7 @@ const ProductCatalog = () => {
   const products = [
     {
       id: 'EV150',
-      name: 'BODE EV FastCharge Pro 150kW',
+      name: 'MATIKAI FastCharge Pro 150kW',
       category: 'DC Fast Charger',
       status: 'available',
       power: '150kW',
@@ -23,7 +23,7 @@ const ProductCatalog = () => {
     },
     {
       id: 'EV250', 
-      name: 'BODE EV UltraCharge 250kW',
+      name: 'MATIKAI UltraCharge 250kW',
       category: 'DC Ultra Fast',
       status: 'available',
       power: '250kW',
@@ -34,7 +34,7 @@ const ProductCatalog = () => {
     },
     {
       id: 'EV50',
-      name: 'BODE EV SmartCharge AC 22kW',
+      name: 'MATIKAI SmartCharge AC 22kW',
       category: 'AC Level 2',
       status: 'backorder',
       power: '22kW',
@@ -45,7 +45,7 @@ const ProductCatalog = () => {
     },
     {
       id: 'EV350',
-      name: 'BODE EV HyperCharge 350kW',
+      name: 'MATIKAI HyperCharge 350kW',
       category: 'DC Ultra Fast',
       status: 'preorder',
       power: '350kW',

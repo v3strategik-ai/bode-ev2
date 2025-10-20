@@ -121,14 +121,14 @@ const RegisterForm = ({ onToggleMode, onSuccess }) => {
               <MessageCircle className="h-6 w-6 text-white" />
             </div>
             <div>
-              <CardTitle className="text-2xl font-bold">BODE EV</CardTitle>
+              <CardTitle className="text-2xl font-bold">MATIKAI</CardTitle>
               <CardDescription className="text-sm text-gray-500">Team Messenger</CardDescription>
             </div>
           </div>
         </div>
         <CardTitle className="text-xl text-center">Create Account</CardTitle>
         <CardDescription className="text-center">
-          Join the BODE EV team communication platform
+          Join the MATIKAI team communication platform
         </CardDescription>
       </CardHeader>
 

@@ -1,6 +1,6 @@
 /**
  * Dialer Interface Component
- * Handles all calling functionality for BODE EV sales team
+ * Handles all calling functionality for MATIKAI sales team
  */
 
 import React, { useState, useEffect } from 'react';

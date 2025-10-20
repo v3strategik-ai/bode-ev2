@@ -1,5 +1,5 @@
 """
-Dialer Models for BODE EV CRM System
+Dialer Models for MATIKAI CRM System
 """
 
 from pydantic import BaseModel, Field

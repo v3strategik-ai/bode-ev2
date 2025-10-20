@@ -10,7 +10,7 @@ async def get_test_client():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>BODE EV Team Messenger - Test Client</title>
+        <title>MATIKAI Team Messenger - Test Client</title>
         <style>
             body { font-family: Arial, sans-serif; margin: 20px; background: #f0f2f5; }
             .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 10px; padding: 20px; }
@@ -30,7 +30,7 @@ async def get_test_client():
     <body>
         <div class="container">
             <div class="header">
-                <h1>🚀 BODE EV Team Messenger</h1>
+                <h1>🚀 MATIKAI Team Messenger</h1>
                 <p>Phase 1: Core Messaging System Test Interface</p>
             </div>
             

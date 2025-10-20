@@ -1,5 +1,5 @@
 """
-AI Email Generation Service for BODE EV CRM
+AI Email Generation Service for MATIKAI CRM
 Uses OpenAI to generate personalized emails
 """
 
@@ -68,16 +68,16 @@ class AIEmailService:
     def _build_system_prompt(self) -> str:
         """Build the system prompt for AI email generation"""
         return """
-        You are an expert email copywriter for BODE EV, a leading provider of electric vehicle charging solutions.
+        You are an expert email copywriter for MATIKAI, a leading provider of electric vehicle charging solutions.
         
         Your role is to create professional, engaging, and personalized emails that:
-        1. Reflect BODE EV's brand voice (professional, innovative, environmentally conscious)
+        1. Reflect MATIKAI's brand voice (professional, innovative, environmentally conscious)
         2. Are tailored to the electric vehicle charging industry
         3. Include relevant technical details about EV charging when appropriate
         4. Drive specific actions (calls, consultations, quote acceptance)
         5. Use modern, responsive HTML formatting
         
-        BODE EV Brand Guidelines:
+        MATIKAI Brand Guidelines:
         - Professional but approachable tone
         - Focus on sustainability and innovation
         - Emphasize reliability and expertise
@@ -88,7 +88,7 @@ class AIEmailService:
         - "subject": A compelling email subject line (50-60 characters)
         - "html_content": Professional HTML email content with proper styling
         
-        Include BODE EV branding elements:
+        Include MATIKAI branding elements:
         - Company colors: #2c5530 (primary green), #f8f9fa (light background)
         - Professional styling with proper margins and padding
         - Clear call-to-action buttons
@@ -98,7 +98,7 @@ class AIEmailService:
     def _build_user_prompt(self, request: AIEmailGenerationRequest) -> str:
         """Build the user prompt based on the request"""
         prompt = f"""
-        Generate a personalized email for BODE EV with the following details:
+        Generate a personalized email for MATIKAI with the following details:
 
         RECIPIENT INFORMATION:
         - Name: {request.recipient_name}
@@ -122,7 +122,7 @@ class AIEmailService:
             - Thank them for their interest in EV charging solutions
             - Mention specific benefits relevant to their industry/business
             - Include next steps (consultation, site assessment, quote)
-            - Highlight BODE EV's expertise and experience
+            - Highlight MATIKAI's expertise and experience
             - Mention financing options and incentives if relevant
             """
         elif "service" in request.context.lower():
@@ -149,7 +149,7 @@ class AIEmailService:
         prompt += """
         
         IMPORTANT: Return ONLY a valid JSON object with 'subject' and 'html_content' keys.
-        The HTML should be production-ready with proper styling, responsive design, and BODE EV branding.
+        The HTML should be production-ready with proper styling, responsive design, and MATIKAI branding.
         """
         
         return prompt
@@ -184,7 +184,7 @@ class AIEmailService:
             
             # Fallback: use entire response as content
             return {
-                "subject": f"Message from BODE EV - {datetime.now().strftime('%B %d')}",
+                "subject": f"Message from MATIKAI - {datetime.now().strftime('%B %d')}",
                 "html_content": self._wrap_in_html(response)
             }
             
@@ -192,7 +192,7 @@ class AIEmailService:
             logger.error(f"Failed to parse AI response: {str(e)}")
             # Return a safe fallback
             return {
-                "subject": "Important Update from BODE EV",
+                "subject": "Important Update from MATIKAI",
                 "html_content": self._wrap_in_html(response)
             }
     
@@ -203,7 +203,7 @@ class AIEmailService:
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <h2 style="color: #2c5530;">BODE EV</h2>
+                    <h2 style="color: #2c5530;">MATIKAI</h2>
                 </div>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px;">
@@ -212,7 +212,7 @@ class AIEmailService:
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">
-                    BODE EV - Leading provider of electric vehicle charging solutions
+                    MATIKAI - Leading provider of electric vehicle charging solutions
                 </p>
             </div>
         </body>
@@ -230,10 +230,10 @@ class AIEmailService:
             subject = f"Service Request Confirmed - {request.recipient_name}"
             content = self._get_mock_service_email(request)
         elif "quote" in context_lower:
-            subject = f"Your BODE EV Quote is Ready - {request.customer_data.get('quote_amount', 'Custom Quote')}"
+            subject = f"Your MATIKAI Quote is Ready - {request.customer_data.get('quote_amount', 'Custom Quote')}"
             content = self._get_mock_quote_email(request)
         else:
-            subject = f"Important Update from BODE EV - {request.recipient_name}"
+            subject = f"Important Update from MATIKAI - {request.recipient_name}"
             content = self._get_mock_generic_email(request)
         
         return {
@@ -248,17 +248,17 @@ class AIEmailService:
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <h2 style="color: #2c5530;">BODE EV Solutions</h2>
+                    <h2 style="color: #2c5530;">MATIKAI Solutions</h2>
                 </div>
                 
                 <h2 style="color: #2c5530;">Thank you for your interest in EV charging solutions!</h2>
                 
                 <p>Dear {request.recipient_name},</p>
                 
-                <p>Thank you for reaching out to BODE EV! We're excited to help you transition to electric vehicle charging infrastructure.</p>
+                <p>Thank you for reaching out to MATIKAI! We're excited to help you transition to electric vehicle charging infrastructure.</p>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                    <h3 style="margin-top: 0; color: #2c5530;">Why Choose BODE EV?</h3>
+                    <h3 style="margin-top: 0; color: #2c5530;">Why Choose MATIKAI?</h3>
                     <ul>
                         <li><strong>Industry Leaders:</strong> Over 10 years in EV charging solutions</li>
                         <li><strong>Certified Installation:</strong> Professional, code-compliant installations</li>
@@ -281,13 +281,13 @@ class AIEmailService:
                 </div>
                 
                 <p>Best regards,<br>
-                BODE EV Team<br>
+                MATIKAI Team<br>
                 Phone: (555) 123-4567<br>
                 Email: info@bodeev.com</p>
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">
-                    BODE EV - Powering the future of transportation<br>
+                    MATIKAI - Powering the future of transportation<br>
                     [AI Generated Email - Mock Mode]
                 </p>
             </div>
@@ -310,7 +310,7 @@ class AIEmailService:
                     <p><strong>Priority:</strong> {request.customer_data.get('priority', 'Standard')}</p>
                 </div>
                 
-                <p>Best regards,<br>BODE EV Service Team</p>
+                <p>Best regards,<br>MATIKAI Service Team</p>
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">[AI Generated Email - Mock Mode]</p>
@@ -338,7 +338,7 @@ class AIEmailService:
                     <a href="#" style="background: #2c5530; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px;">Accept Quote</a>
                 </div>
                 
-                <p>Best regards,<br>BODE EV Sales Team</p>
+                <p>Best regards,<br>MATIKAI Sales Team</p>
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">[AI Generated Email - Mock Mode]</p>
@@ -353,7 +353,7 @@ class AIEmailService:
         <html>
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
-                <h2 style="color: #2c5530;">Update from BODE EV</h2>
+                <h2 style="color: #2c5530;">Update from MATIKAI</h2>
                 <p>Dear {request.recipient_name},</p>
                 <p>We have an important update regarding your EV charging solutions.</p>
                 
@@ -364,7 +364,7 @@ class AIEmailService:
                 
                 <p>If you have any questions, please don't hesitate to contact us.</p>
                 
-                <p>Best regards,<br>BODE EV Team</p>
+                <p>Best regards,<br>MATIKAI Team</p>
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">[AI Generated Email - Mock Mode]</p>

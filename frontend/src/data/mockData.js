@@ -1,4 +1,4 @@
-// Mock data for the BODE EV Enterprise platform
+// Mock data for the MATIKAI Enterprise platform
 
 export const dashboardStats = {
   activeLeads: {

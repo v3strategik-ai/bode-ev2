@@ -10,7 +10,7 @@ async def get_file_test_client():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>BODE EV File Sharing - Test Client</title>
+        <title>MATIKAI File Sharing - Test Client</title>
         <style>
             body { font-family: Arial, sans-serif; margin: 20px; background: #f0f2f5; }
             .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 10px; padding: 20px; }
@@ -37,7 +37,7 @@ async def get_file_test_client():
     <body>
         <div class="container">
             <div class="header">
-                <h1>☁️ BODE EV File Sharing System</h1>
+                <h1>☁️ MATIKAI File Sharing System</h1>
                 <p>Phase 1: Cloud Storage & File Attachment Test Interface</p>
                 <div id="authStatus" style="margin: 10px 0;">
                     <span style="color: #e74c3c;">Please login in the messenger test first to get access token</span>

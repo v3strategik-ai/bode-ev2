@@ -10,7 +10,7 @@ const FloatingCopilot = () => {
   const [message, setMessage] = useState('');
   const [activeSection, setActiveSection] = useState('automation');
   const [messages, setMessages] = useState([
-    { type: 'assistant', content: 'Welcome to BODE EV Assistant! I specialize in lead generation, quoting, and organizational workflows. I can help you:\n\n• Generate and qualify leads automatically\n• Create accurate quotes in minutes\n• Set up automated follow-up sequences\n• Optimize your sales processes\n\nWhat would you like to accomplish today?' }
+    { type: 'assistant', content: 'Welcome to MATIKAI Assistant! I specialize in lead generation, quoting, and organizational workflows. I can help you:\n\n• Generate and qualify leads automatically\n• Create accurate quotes in minutes\n• Set up automated follow-up sequences\n• Optimize your sales processes\n\nWhat would you like to accomplish today?' }
   ]);
 
   const leadGenerationTools = [
@@ -117,7 +117,7 @@ const FloatingCopilot = () => {
     if (message.trim()) {
       const newMessages = [...messages, { type: 'user', content: message }];
       
-      // AI-powered response based on BODE EV focus areas
+      // AI-powered response based on MATIKAI focus areas
       let response = '';
       const lowerMessage = message.toLowerCase();
       
@@ -128,7 +128,7 @@ const FloatingCopilot = () => {
       } else if (lowerMessage.includes('organize') || lowerMessage.includes('workflow')) {
         response = 'I\'ll help streamline your operations. Here are some automation options:\n\n• Task automation for routine processes\n• Performance dashboards and reporting\n• Communication workflow optimization\n• Process bottleneck identification\n\nWhat aspect of your organization would you like to improve first?';
       } else {
-        response = 'I understand you need assistance with your EV charging business operations. As your BODE EV Assistant, I can help with:\n\n🎯 **Lead Generation** - Capture, score, and nurture prospects\n💰 **Quoting** - Smart pricing and approval workflows  \n📋 **Organization** - Process automation and optimization\n\nCould you tell me more about your specific challenge?';
+        response = 'I understand you need assistance with your EV charging business operations. As your MATIKAI Assistant, I can help with:\n\n🎯 **Lead Generation** - Capture, score, and nurture prospects\n💰 **Quoting** - Smart pricing and approval workflows  \n📋 **Organization** - Process automation and optimization\n\nCould you tell me more about your specific challenge?';
       }
       
       newMessages.push({ type: 'assistant', content: response });
@@ -249,7 +249,7 @@ const FloatingCopilot = () => {
           <Bot className="h-8 w-8 group-hover:animate-pulse" />
         </Button>
         <div className="absolute -top-12 right-0 bg-gray-900 text-white px-3 py-1 rounded-lg text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-          BODE EV Assistant
+          MATIKAI Assistant
         </div>
       </div>
     );
@@ -267,7 +267,7 @@ const FloatingCopilot = () => {
               <Bot className="h-6 w-6" />
             </div>
             <div>
-              <span className="font-bold text-lg">BODE EV Assistant</span>
+              <span className="font-bold text-lg">MATIKAI Assistant</span>
               <div className="text-xs opacity-90">Business Operations AI</div>
             </div>
           </div>

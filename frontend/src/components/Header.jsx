@@ -50,21 +50,28 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
   return (
     <header className="bg-white border-b border-gray-200 px-6 py-4 shadow-sm">
       <div className="flex items-center justify-between">
-        {/* Left section - MATIKAI Logo and title */}
-        <div className="flex items-center space-x-6">
-          <div className="flex items-center space-x-4">
+        {/* Left section - Large MATIKAI Logo with badge underneath */}
+        <div className="flex items-center space-x-8">
+          <div className="flex flex-col items-center space-y-2">
             <img 
               src="/matikai-logo.png" 
               alt="MATIKAI Logo" 
-              className="h-12 w-auto shadow-lg rounded-lg"
+              className="h-36 w-auto shadow-2xl rounded-xl transform hover:scale-105 transition-transform duration-300"
             />
-            <span className="text-xs text-blue-600 font-medium bg-blue-50 px-3 py-1 rounded-full border border-blue-200">Enterprise AI Platform</span>
+            <span className="text-sm text-blue-600 font-semibold bg-blue-50 px-4 py-2 rounded-full border border-blue-200 shadow-md">
+              Enterprise AI Platform
+            </span>
           </div>
-          <div className="border-l border-blue-200 pl-6 ml-6">
-            <h1 className="text-2xl font-bold text-gray-900">
+          <div className="border-l border-blue-200 pl-8 ml-8">
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">
               MATIKAI Enterprise AI
             </h1>
-            <p className="text-sm text-gray-600 font-medium">AI-powered business solutions & intelligent automation • Sales & Communications Platform</p>
+            <p className="text-base text-gray-600 font-medium leading-relaxed">
+              AI-powered business solutions & intelligent automation
+            </p>
+            <p className="text-sm text-blue-600 font-medium mt-1">
+              Sales & Communications Platform
+            </p>
           </div>
         </div>
 

@@ -26,6 +26,9 @@ from integrations.aws.test_client import test_router as files_test_router
 from integrations.email.router import router as email_router
 from integrations.dialer.router import router as dialer_router
 
+# Import AI Analytics components
+from integrations.ai_analytics.router import router as ai_analytics_router
+
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')

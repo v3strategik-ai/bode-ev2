@@ -199,7 +199,7 @@ async def get_dialer_service_status():
     Get dialer service status and configuration
     """
     return {
-        "service_name": "MATIKAI Dialer Service",
+        "service_name": "MATIKAI AI Dialer Service",
         "twilio_configured": not dialer_service.mock_mode,
         "mock_mode": dialer_service.mock_mode,
         "phone_number": dialer_service.phone_number if not dialer_service.mock_mode else "Mock: +15551234567",

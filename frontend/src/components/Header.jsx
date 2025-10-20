@@ -115,7 +115,7 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
               <div className="relative group">
                 <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
                 <Input
-                  placeholder="Search AI solutions..."
+                  placeholder="Search platform features..."
                   className="pl-12 pr-4 py-3 bg-gray-50 border-gray-200 text-gray-900 placeholder-gray-500 w-72 rounded-xl focus:border-blue-500 focus:ring-blue-500/20 transition-all duration-300"
                 />
               </div>

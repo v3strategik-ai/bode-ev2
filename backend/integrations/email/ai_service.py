@@ -327,7 +327,7 @@ class AIEmailService:
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <h2 style="color: #2c5530;">Your Custom EV Charging Quote is Ready!</h2>
                 <p>Dear {request.recipient_name},</p>
-                <p>We've prepared a custom quote for your AI automation infrastructure needs.</p>
+                <p>We've prepared a custom quote for your AI automation solutions needs.</p>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
                     <h3 style="color: #2c5530;">Quote: {request.customer_data.get('quote_amount', '$15,750')}</h3>

@@ -15,7 +15,7 @@ const CustomerSupport = () => {
       title: 'System Integration Issue',
       customer: 'TechCorp Solutions',
       contact_name: 'Sarah Johnson',
-      contact_email: 's.johnson@tesla.com',
+      contact_email: 's.johnson@techcorp.com',
       contact_phone: '+15551234567',
       priority: 'high',
       status: 'open',

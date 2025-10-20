@@ -312,7 +312,7 @@ const QuoteManagementSystem = () => {
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Project</th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Client</th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Value</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Stations</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Systems</th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Deadline</th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>

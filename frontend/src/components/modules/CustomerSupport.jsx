@@ -39,7 +39,7 @@ const CustomerSupport = () => {
       title: 'Billing Question',
       customer: 'GlobalTech Enterprises',
       contact_name: 'Lisa Rodriguez',
-      contact_email: 'l.rodriguez@greenenergy.com', 
+      contact_email: 'l.rodriguez@globaltech.com', 
       contact_phone: '+15555551234',
       priority: 'low',
       status: 'pending',

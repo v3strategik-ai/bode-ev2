@@ -73,7 +73,7 @@ class AIEmailService:
         Your role is to create professional, engaging, and personalized emails that:
         1. Reflect MATIKAI's brand voice (professional, innovative, environmentally conscious)
         2. Are tailored to the electric vehicle charging industry
-        3. Include relevant technical details about EV charging when appropriate
+        3. Include relevant technical details about AI automation when appropriate
         4. Drive specific actions (calls, consultations, quote acceptance)
         5. Use modern, responsive HTML formatting
         
@@ -224,7 +224,7 @@ class AIEmailService:
         context_lower = request.context.lower()
         
         if "lead" in context_lower:
-            subject = f"Thank you for your interest in EV charging, {request.recipient_name}!"
+            subject = f"Thank you for your interest in AI automation, {request.recipient_name}!"
             content = self._get_mock_lead_email(request)
         elif "service" in context_lower:
             subject = f"Service Request Confirmed - {request.recipient_name}"
@@ -327,7 +327,7 @@ class AIEmailService:
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <h2 style="color: #2c5530;">Your Custom EV Charging Quote is Ready!</h2>
                 <p>Dear {request.recipient_name},</p>
-                <p>We've prepared a custom quote for your EV charging infrastructure needs.</p>
+                <p>We've prepared a custom quote for your AI automation infrastructure needs.</p>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
                     <h3 style="color: #2c5530;">Quote: {request.customer_data.get('quote_amount', '$15,750')}</h3>

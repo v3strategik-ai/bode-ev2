@@ -130,7 +130,7 @@ async def twiml_lead_follow_up():
     response.say(
         "Hello! This is a follow-up call from MATIKAI regarding your interest in our electric vehicle AI solutions. "
         "We'd love to discuss your specific needs and answer any questions you may have. "
-        "Please hold while we connect you to one of our EV charging specialists, or press 1 to leave a voicemail.",
+        "Please hold while we connect you to one of our AI automation specialists, or press 1 to leave a voicemail.",
         voice='alice'
     )
     
@@ -149,7 +149,7 @@ async def twiml_customer_service():
     response = VoiceResponse()
     response.say(
         "Thank you for calling MATIKAI customer service. "
-        "We're here to help with any questions about your EV charging equipment or service needs. "
+        "We're here to help with any questions about your AI automation equipment or service needs. "
         "Please hold while we connect you to a customer service representative.",
         voice='alice'
     )

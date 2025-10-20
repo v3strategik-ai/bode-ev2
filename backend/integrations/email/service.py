@@ -209,7 +209,7 @@ class EmailService:
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">
-                    MATIKAI Service Excellence - Your trusted EV charging partner<br>
+                    MATIKAI Service Excellence - Your trusted AI automation partner<br>
                     Service hours: Monday-Friday 8AM-6PM, Saturday 9AM-3PM
                 </p>
             </div>

@@ -128,7 +128,7 @@ const FloatingCopilot = () => {
       } else if (lowerMessage.includes('organize') || lowerMessage.includes('workflow')) {
         response = 'I\'ll help streamline your operations. Here are some automation options:\n\n• Task automation for routine processes\n• Performance dashboards and reporting\n• Communication workflow optimization\n• Process bottleneck identification\n\nWhat aspect of your organization would you like to improve first?';
       } else {
-        response = 'I understand you need assistance with your EV charging business operations. As your MATIKAI Assistant, I can help with:\n\n🎯 **Lead Generation** - Capture, score, and nurture prospects\n💰 **Quoting** - Smart pricing and approval workflows  \n📋 **Organization** - Process automation and optimization\n\nCould you tell me more about your specific challenge?';
+        response = 'I understand you need assistance with your AI automation business operations. As your MATIKAI Assistant, I can help with:\n\n🎯 **Lead Generation** - Capture, score, and nurture prospects\n💰 **Quoting** - Smart pricing and approval workflows  \n📋 **Organization** - Process automation and optimization\n\nCould you tell me more about your specific challenge?';
       }
       
       newMessages.push({ type: 'assistant', content: response });

@@ -90,7 +90,7 @@ const ProductCatalog = () => {
             <Zap className="h-8 w-8 mr-3 text-green-600" />
             Product Catalog
           </h1>
-          <p className="text-gray-600 mt-2">Browse and manage EV charging station products</p>
+          <p className="text-gray-600 mt-2">Browse and manage AI automation station products</p>
         </div>
         <div className="flex space-x-3">
           <Button className="bg-green-600 hover:bg-green-700 text-white">

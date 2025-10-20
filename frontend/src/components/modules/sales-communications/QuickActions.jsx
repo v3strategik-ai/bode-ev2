@@ -432,7 +432,7 @@ const QuickActions = () => {
                 <h3 className="font-semibold">Email Optimization</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                Emails with "EV charging" in the subject line have 23% higher open rates.
+                Emails with "AI automation" in the subject line have 23% higher open rates.
               </p>
             </div>
           </div>

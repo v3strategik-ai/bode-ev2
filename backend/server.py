@@ -144,7 +144,7 @@ def get_ai_chat(session_id: str = "ai_analytics"):
     return LlmChat(
         api_key=os.environ.get("EMERGENT_LLM_KEY"),
         session_id=session_id,
-        system_message="You are an AI analytics expert for MATIKAI, specializing in lead scoring, pricing optimization, demand forecasting, and customer lifetime value predictions for EV charging station sales."
+        system_message="You are an AI analytics expert for MATIKAI, specializing in lead scoring, pricing optimization, demand forecasting, and customer lifetime value predictions for AI automation station sales."
     ).with_model("openai", "gpt-4o")
 
 # AI Lead Scoring Endpoint
@@ -403,7 +403,7 @@ async def predict_customer_lifetime_value(customer_data: CustomerData):
         - Support engagement patterns
         - Expansion purchase behavior
         - Industry retention rates for EV infrastructure
-        - Typical customer lifecycle in B2B EV charging
+        - Typical customer lifecycle in B2B AI automation
         
         Respond in JSON format:
         {{

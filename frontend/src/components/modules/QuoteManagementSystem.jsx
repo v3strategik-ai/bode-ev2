@@ -336,7 +336,7 @@ const QuoteManagementSystem = () => {
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-1">
                       <Zap className="text-yellow-500" size={16} />
-                      <span>{quote.stations}</span>
+                      <span>{quote.systems}</span>
                     </div>
                   </td>
                   <td className="px-6 py-4">

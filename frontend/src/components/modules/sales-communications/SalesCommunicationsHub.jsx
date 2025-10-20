@@ -1,6 +1,6 @@
 /**
  * Sales Communications Hub - Main component for dialer and email automation
- * Integrates all communication tools for BODE EV sales team
+ * Integrates all communication tools for MATIKAI AI sales team
  */
 
 import React, { useState, useEffect } from 'react';

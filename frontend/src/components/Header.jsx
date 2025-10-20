@@ -76,7 +76,8 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
         </div>
 
         {/* Center section - Stats */}
-        <div className="flex items-center space-x-8 text-sm">
+        <div className="flex flex-col justify-center">
+          <div className="flex items-center space-x-6 text-sm">
           <div className="flex items-center space-x-3 bg-blue-50 backdrop-blur-sm rounded-full px-4 py-2 border border-blue-200">
             <div className="w-2.5 h-2.5 bg-blue-500 rounded-full animate-pulse shadow-lg shadow-blue-300/30"></div>
             <span className="font-semibold text-blue-700">99.8% AI Uptime</span>

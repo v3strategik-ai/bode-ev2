@@ -106,11 +106,11 @@ class EmailService:
                     <img src="https://bodeev.com/logo.png" alt="BODE EV" style="height: 60px;">
                 </div>
                 
-                <h2 style="color: #2c5530;">Thank you for your interest in EV Charging Solutions!</h2>
+                <h2 style="color: #2563eb;">Thank you for your interest in MATIKAI AI Solutions!</h2>
                 
                 <p>Dear {lead_name},</p>
                 
-                <p>Thank you for reaching out to BODE EV! We're excited to help you with your electric vehicle charging infrastructure needs.</p>
+                <p>Thank you for reaching out to MATIKAI! We're excited to help you with our advanced AI-powered business solutions and automation.</p>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
                     <h3 style="margin-top: 0; color: #2c5530;">Your Inquiry Details:</h3>

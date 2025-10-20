@@ -56,7 +56,7 @@ export const systemStatus = {
 export const leads = [
   {
     id: 1,
-    name: 'Tesla Supercharger Network',
+    name: 'Tesla AI Platform Network',
     company: 'Tesla Inc.',
     status: 'Hot Lead',
     value: '$2.4M',

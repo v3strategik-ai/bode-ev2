@@ -43,7 +43,7 @@ const QuoteManagementSystem = () => {
   const [quotes] = useState([
     {
       id: 'Q-2025-001',
-      project: 'Tesla Supercharger - Phase 2',
+      project: 'Tesla AI Platform - Phase 2',
       client: 'Tesla Inc.',
       contact_name: 'Sarah Johnson',
       contact_email: 's.johnson@tesla.com',

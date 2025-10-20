@@ -55,14 +55,14 @@ const MainContent = () => {
   ];
 
   const hotLeads = [
-    { id: 1, company: 'Tesla Supercharger Network', contact: 'Sarah Johnson', value: '$2.4M', score: 95, status: 'Hot', lastActivity: '2 hours ago', location: 'Phoenix, AZ' },
+    { id: 1, company: 'Tesla AI Platform Network', contact: 'Sarah Johnson', value: '$2.4M', score: 95, status: 'Hot', lastActivity: '2 hours ago', location: 'Phoenix, AZ' },
     { id: 2, company: 'Walmart Distribution Center', contact: 'Mike Chen', value: '$890K', score: 88, status: 'Warm', lastActivity: '1 day ago', location: 'Denver, CO' },
     { id: 3, company: 'Amazon Logistics Hub', contact: 'Emily Rodriguez', value: '$1.8M', score: 92, status: 'Hot', lastActivity: '4 hours ago', location: 'Seattle, WA' },
     { id: 4, company: 'Target Corporate Fleet', contact: 'David Park', value: '$650K', score: 76, status: 'Qualified', lastActivity: '3 days ago', location: 'Minneapolis, MN' }
   ];
 
   const pendingQuotes = [
-    { id: 1, project: 'Tesla Supercharger - Phase 2', client: 'Tesla Inc.', value: '$2.4M', stations: 48, deadline: '2025-09-28', status: 'In Review' },
+    { id: 1, project: 'Tesla AI Platform - Phase 2', client: 'Tesla Inc.', value: '$2.4M', stations: 48, deadline: '2025-09-28', status: 'In Review' },
     { id: 2, project: 'Walmart Fleet Charging', client: 'Walmart', value: '$890K', stations: 24, deadline: '2025-09-25', status: 'Pending Approval' },
     { id: 3, project: 'Amazon Distribution Hub', client: 'Amazon', value: '$1.2M', stations: 32, deadline: '2025-09-30', status: 'Quote Sent' }
   ];

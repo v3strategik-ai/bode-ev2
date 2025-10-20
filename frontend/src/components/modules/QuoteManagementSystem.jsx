@@ -183,7 +183,7 @@ const QuoteManagementSystem = () => {
         quote_amount: quote.value,
         quote_id: quote.id,
         valid_until: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toLocaleDateString(), // 30 days from now
-        sales_rep: 'BODE EV Sales Team'
+        sales_rep: 'MATIKAI AI Team'
       });
 
       if (result.success) {

@@ -96,7 +96,7 @@ class EmailService:
         """
         Send automated lead follow-up email
         """
-        subject = f"Thank you for your interest in BODE EV Solutions, {lead_name}"
+        subject = f"Thank you for your interest in MATIKAI AI Solutions, {lead_name}"
         
         html_content = f"""
         <html>

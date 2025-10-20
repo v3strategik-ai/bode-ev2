@@ -70,17 +70,17 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
 
         {/* Center section - Stats */}
         <div className="flex items-center space-x-8 text-sm">
-          <div className="flex items-center space-x-3 bg-gray-50 backdrop-blur-sm rounded-full px-4 py-2 border border-gray-200">
-            <div className="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse shadow-lg shadow-green-300/30"></div>
-            <span className="font-semibold text-gray-700">99.8% Platform Uptime</span>
-          </div>
-          <div className="flex items-center space-x-3 bg-gray-50 backdrop-blur-sm rounded-full px-4 py-2 border border-gray-200">
+          <div className="flex items-center space-x-3 bg-blue-50 backdrop-blur-sm rounded-full px-4 py-2 border border-blue-200">
             <div className="w-2.5 h-2.5 bg-blue-500 rounded-full animate-pulse shadow-lg shadow-blue-300/30"></div>
-            <span className="font-semibold text-gray-700">77.3% Success Rate</span>
+            <span className="font-semibold text-blue-700">99.8% AI Uptime</span>
           </div>
-          <div className="flex items-center space-x-3 bg-gray-50 backdrop-blur-sm rounded-full px-4 py-2 border border-gray-200">
-            <div className="w-2.5 h-2.5 bg-amber-500 rounded-full animate-pulse shadow-lg shadow-amber-300/30"></div>
-            <span className="font-semibold text-gray-700">59M+ EV Miles</span>
+          <div className="flex items-center space-x-3 bg-indigo-50 backdrop-blur-sm rounded-full px-4 py-2 border border-indigo-200">
+            <div className="w-2.5 h-2.5 bg-indigo-500 rounded-full animate-pulse shadow-lg shadow-indigo-300/30"></div>
+            <span className="font-semibold text-indigo-700">94.2% Accuracy Rate</span>
+          </div>
+          <div className="flex items-center space-x-3 bg-purple-50 backdrop-blur-sm rounded-full px-4 py-2 border border-purple-200">
+            <div className="w-2.5 h-2.5 bg-purple-500 rounded-full animate-pulse shadow-lg shadow-purple-300/30"></div>
+            <span className="font-semibold text-purple-700">2.8M+ Interactions</span>
           </div>
         </div>
 

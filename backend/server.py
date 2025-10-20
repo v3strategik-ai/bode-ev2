@@ -311,7 +311,7 @@ async def get_demand_forecast(forecast_request: ForecastRequest):
         chat = get_ai_chat("demand_forecasting")
         
         prompt = f"""
-        Generate seasonal demand forecast for MATIKAI charging stations:
+        Generate seasonal demand forecast for MATIKAI automation systems:
         
         Product Category: {forecast_request.product_category}
         Region: {forecast_request.region}

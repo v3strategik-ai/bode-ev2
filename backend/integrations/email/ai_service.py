@@ -255,7 +255,7 @@ class AIEmailService:
                 
                 <p>Dear {request.recipient_name},</p>
                 
-                <p>Thank you for reaching out to MATIKAI! We're excited to help you transition to electric vehicle charging infrastructure.</p>
+                <p>Thank you for reaching out to MATIKAI! We're excited to help you transition to electric vehicle AI infrastructure.</p>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
                     <h3 style="margin-top: 0; color: #2c5530;">Why Choose MATIKAI?</h3>

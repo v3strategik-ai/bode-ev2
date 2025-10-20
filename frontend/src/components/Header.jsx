@@ -31,22 +31,23 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
       year: 'numeric'
     });
   };
-  
+
   const handleQuoteRequest = () => {
     onModuleChange('quotes');
   };
 
   const handleLeadGeneration = () => {
-    onModuleChange('leads');
+    onModuleChange('lead-generation');
   };
 
   const handleReportGeneration = () => {
-    onModuleChange('analytics');
+    onModuleChange('reports');
   };
 
   const handleSettings = () => {
     onModuleChange('settings');
   };
+
   return (
     <header className="bg-white border-b border-gray-200 px-6 py-6 shadow-sm">
       <div className="flex items-start justify-between">
@@ -97,36 +98,37 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
         <div className="flex flex-col justify-center">
           <div className="flex items-center space-x-6 mb-2">
             <div className="text-right text-sm bg-gray-50 backdrop-blur-sm rounded-xl px-4 py-2 border border-gray-200">
-            <div className="font-mono text-xl font-bold text-gray-900">
-              {formatTime(currentTime)}
-            </div>
-            <div className="text-gray-600 text-xs">{formatDate(currentTime)}</div>
-          </div>
-          
-          <div className="flex items-center space-x-3">
-            <div className="relative group">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
-              <Input
-                placeholder="Search AI solutions..."
-                className="pl-12 pr-4 py-3 bg-gray-50 border-gray-200 text-gray-900 placeholder-gray-500 w-72 rounded-xl focus:border-blue-500 focus:ring-blue-500/20 transition-all duration-300"
-              />
+              <div className="font-mono text-xl font-bold text-gray-900">
+                {formatTime(currentTime)}
+              </div>
+              <div className="text-gray-600 text-xs">{formatDate(currentTime)}</div>
             </div>
             
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setDarkMode(!darkMode)}
-              className="text-gray-700 hover:bg-gray-100 rounded-xl px-4 py-2 border border-gray-200 transition-all duration-300"
-            >
-              {darkMode ? <Sun className="h-4 w-4 mr-2" /> : <Moon className="h-4 w-4 mr-2" />}
-              Dark
-            </Button>
-            
-            <NotificationBell />
-            
-            <div className="text-right bg-blue-50 backdrop-blur-sm rounded-xl px-4 py-2 border border-blue-200">
-              <div className="font-semibold text-sm text-blue-900">MATIKAI Admin</div>
-              <div className="text-xs text-blue-600">AI Operations</div>
+            <div className="flex items-center space-x-3">
+              <div className="relative group">
+                <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+                <Input
+                  placeholder="Search AI solutions..."
+                  className="pl-12 pr-4 py-3 bg-gray-50 border-gray-200 text-gray-900 placeholder-gray-500 w-72 rounded-xl focus:border-blue-500 focus:ring-blue-500/20 transition-all duration-300"
+                />
+              </div>
+              
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setDarkMode(!darkMode)}
+                className="text-gray-700 hover:bg-gray-100 rounded-xl px-4 py-2 border border-gray-200 transition-all duration-300"
+              >
+                {darkMode ? <Sun className="h-4 w-4 mr-2" /> : <Moon className="h-4 w-4 mr-2" />}
+                Dark
+              </Button>
+              
+              <NotificationBell />
+              
+              <div className="text-right bg-blue-50 backdrop-blur-sm rounded-xl px-4 py-2 border border-blue-200">
+                <div className="font-semibold text-sm text-blue-900">MATIKAI Admin</div>
+                <div className="text-xs text-blue-600">AI Operations</div>
+              </div>
             </div>
           </div>
         </div>

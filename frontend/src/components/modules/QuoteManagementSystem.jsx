@@ -75,7 +75,7 @@ const QuoteManagementSystem = () => {
       contact_email: 'l.rodriguez@globaltech.com',
       contact_phone: '+15555551234',
       value: '$1.2M', 
-      stations: 32,
+      systems: 32,
       deadline: '2025-11-01',
       status: 'Draft',
       progress: 45

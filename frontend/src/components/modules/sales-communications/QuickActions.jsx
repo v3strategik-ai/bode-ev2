@@ -138,7 +138,7 @@ const QuickActions = () => {
       status: 'warm'
     },
     {
-      name: 'Green Energy Solutions',
+      name: 'GlobalTech Enterprises',
       email: 'info@greenenergy.com',
       phone: '+15555551234',
       lastContact: '3 days ago',

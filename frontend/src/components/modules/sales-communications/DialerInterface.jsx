@@ -124,7 +124,7 @@ const DialerInterface = () => {
   const quickContacts = [
     { name: 'TechCorp Solutions', phone: '+15551234567', company: 'Tesla Inc.' },
     { name: 'InnovateBiz Corp', phone: '+15559876543', company: 'EcoCharge' },
-    { name: 'Green Energy Solutions', phone: '+15555551234', company: 'Green Energy' }
+    { name: 'GlobalTech Enterprises', phone: '+15555551234', company: 'Green Energy' }
   ];
 
   return (

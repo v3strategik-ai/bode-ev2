@@ -37,7 +37,7 @@ const CustomerSupport = () => {
     {
       id: 'T-2025-003',
       title: 'Billing Question',
-      customer: 'Green Energy Solutions',
+      customer: 'GlobalTech Enterprises',
       contact_name: 'Lisa Rodriguez',
       contact_email: 'l.rodriguez@greenenergy.com', 
       contact_phone: '+15555551234',

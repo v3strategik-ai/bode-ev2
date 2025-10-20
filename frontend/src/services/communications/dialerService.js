@@ -197,7 +197,7 @@ class DialerService {
         status: 'no-answer',
         duration: 0,
         start_time: new Date(Date.now() - 7200000),
-        customer_name: 'Green Energy Solutions',
+        customer_name: 'GlobalTech Enterprises',
         cost: '$0.00'
       },
       {

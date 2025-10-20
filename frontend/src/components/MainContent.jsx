@@ -98,6 +98,10 @@ const MainContent = () => {
       return <SalesCommunicationsHub />;
     }
 
+    if (activeTab === 'ai-intelligence') {
+      return <AIIntelligenceCenter />;
+    }
+
     // Default dashboard view
     return (
       <>

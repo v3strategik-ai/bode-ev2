@@ -207,7 +207,7 @@ class DialerService {
         status: 'completed', 
         duration: 325,
         start_time: new Date(Date.now() - 10800000),
-        customer_name: 'EcoCharge Networks',
+        customer_name: 'InnovateBiz Corp',
         cost: '$10.83'
       }
     ];

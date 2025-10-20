@@ -131,7 +131,7 @@ const QuickActions = () => {
       status: 'hot'
     },
     {
-      name: 'EcoCharge Networks',
+      name: 'InnovateBiz Corp',
       email: 'contact@ecocharge.com',
       phone: '+15559876543',
       lastContact: '1 day ago',

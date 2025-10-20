@@ -25,7 +25,7 @@ const CustomerSupport = () => {
     {
       id: 'T-2025-002',
       title: 'Installation Scheduling',
-      customer: 'EcoCharge Networks', 
+      customer: 'InnovateBiz Corp', 
       contact_name: 'Mike Chen',
       contact_email: 'm.chen@ecocharge.com',
       contact_phone: '+15559876543',

@@ -11,6 +11,7 @@ import LeadGenerationHub from './modules/LeadGenerationHub';
 import QuoteManagementSystem from './modules/QuoteManagementSystem';
 import TeamMessenger from './modules/TeamMessenger';
 import SalesCommunicationsHub from './modules/sales-communications/SalesCommunicationsHub';
+import AIIntelligenceCenter from './modules/ai-intelligence/AIIntelligenceCenter';
 
 const MainContent = () => {
   const [activeTab, setActiveTab] = useState('dashboard');

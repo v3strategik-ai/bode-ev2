@@ -27,7 +27,7 @@ const CustomerSupport = () => {
       title: 'System Implementation Scheduling',
       customer: 'InnovateBiz Corp', 
       contact_name: 'Mike Chen',
-      contact_email: 'm.chen@ecocharge.com',
+      contact_email: 'm.chen@innovatebiz.com',
       contact_phone: '+15559876543',
       priority: 'medium',
       status: 'in-progress',

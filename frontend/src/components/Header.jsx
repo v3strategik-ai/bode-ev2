@@ -48,8 +48,8 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
     onModuleChange('settings');
   };
   return (
-    <header className="bg-white border-b border-gray-200 px-6 py-4 shadow-sm">
-      <div className="flex items-center justify-between">
+    <header className="bg-white border-b border-gray-200 px-6 py-6 shadow-sm">
+      <div className="flex items-start justify-between">
         {/* Left section - Large MATIKAI Logo with badge underneath */}
         <div className="flex items-center space-x-8">
           <div className="flex flex-col items-center space-y-2">

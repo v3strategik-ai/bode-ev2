@@ -66,7 +66,7 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
               {/* Floating glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-500/20 rounded-2xl blur-xl -z-10 group-hover:from-blue-400/30 group-hover:to-purple-500/30 transition-all duration-500"></div>
             </div>
-            <span className="text-sm text-blue-600 font-semibold bg-blue-50 px-4 py-2 rounded-full border border-blue-200 shadow-md">
+            <span className="text-sm text-blue-600 font-semibold bg-blue-50/80 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-200/50 shadow-lg hover:bg-blue-50/90 transition-all duration-300">
               Enterprise AI Platform
             </span>
           </div>

@@ -104,7 +104,7 @@ const CustomerSupport = () => {
         customer_name: ticket.contact_name,
         service_type: ticket.title,
         appointment_date: 'To be scheduled',
-        technician_name: 'BODE EV Support Team'
+        technician_name: 'MATIKAI AI Support Team'
       });
 
       if (result.success) {

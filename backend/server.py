@@ -524,6 +524,14 @@ dialer_service_instance = DialerService()
 import integrations.dialer.router
 integrations.dialer.router.dialer_service = dialer_service_instance
 
+# Initialize AI Analytics service (after .env is loaded)
+from integrations.ai_analytics.service import AIAnalyticsService
+ai_analytics_service_instance = AIAnalyticsService()
+
+# Update the global ai_analytics_service import
+import integrations.ai_analytics.router
+integrations.ai_analytics.router.ai_analytics_service = ai_analytics_service_instance
+
 # Include sub-routers in API router FIRST
 api_router.include_router(messenger_router)
 api_router.include_router(messenger_test_router)

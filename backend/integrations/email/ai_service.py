@@ -275,7 +275,7 @@ class AIEmailService:
                 </ul>
                 
                 <div style="text-align: center; margin: 30px 0;">
-                    <a href="https://bodeev.com/schedule" style="background: #2c5530; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block;">
+                    <a href="https://matikaiev.com/schedule" style="background: #2c5530; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block;">
                         Schedule Your Free Consultation
                     </a>
                 </div>
@@ -283,7 +283,7 @@ class AIEmailService:
                 <p>Best regards,<br>
                 MATIKAI Team<br>
                 Phone: (555) 123-4567<br>
-                Email: info@bodeev.com</p>
+                Email: info@matikaiev.com</p>
                 
                 <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
                 <p style="font-size: 12px; color: #666; text-align: center;">

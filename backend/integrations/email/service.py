@@ -21,7 +21,7 @@ class EmailDeliveryError(Exception):
 class EmailService:
     def __init__(self):
         self.api_key = os.getenv('SENDGRID_API_KEY')
-        self.sender_email = os.getenv('SENDER_EMAIL', 'noreply@bodeev.com')
+        self.sender_email = os.getenv('SENDER_EMAIL', 'noreply@matikaiev.com')
         
         if not self.api_key:
             logger.warning("SendGrid API key not found. Email service will operate in mock mode.")
@@ -103,7 +103,7 @@ class EmailService:
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <img src="https://bodeev.com/logo.png" alt="MATIKAI" style="height: 60px;">
+                    <img src="https://matikaiev.com/logo.png" alt="MATIKAI" style="height: 60px;">
                 </div>
                 
                 <h2 style="color: #2563eb;">Thank you for your interest in MATIKAI AI Solutions!</h2>
@@ -129,12 +129,12 @@ class EmailService:
                 </ul>
                 
                 <div style="text-align: center; margin: 30px 0;">
-                    <a href="https://bodeev.com/schedule-consultation" style="background: #2c5530; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block;">
+                    <a href="https://matikaiev.com/schedule-consultation" style="background: #2c5530; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block;">
                         Schedule Your Consultation
                     </a>
                 </div>
                 
-                <p>In the meantime, feel free to explore our <a href="https://bodeev.com/products">product catalog</a> or check out our <a href="https://bodeev.com/case-studies">customer success stories</a>.</p>
+                <p>In the meantime, feel free to explore our <a href="https://matikaiev.com/products">product catalog</a> or check out our <a href="https://matikaiev.com/case-studies">customer success stories</a>.</p>
                 
                 <p>Best regards,<br>
                 {sales_rep}<br>
@@ -170,7 +170,7 @@ class EmailService:
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <img src="https://bodeev.com/logo.png" alt="MATIKAI" style="height: 60px;">
+                    <img src="https://matikaiev.com/logo.png" alt="MATIKAI" style="height: 60px;">
                 </div>
                 
                 <h2 style="color: #2c5530;">Service Request Confirmed</h2>
@@ -197,12 +197,12 @@ class EmailService:
                 </ul>
                 
                 <div style="text-align: center; margin: 30px 0;">
-                    <a href="https://bodeev.com/service-portal" style="background: #2c5530; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block;">
+                    <a href="https://matikaiev.com/service-portal" style="background: #2c5530; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block;">
                         Track Service Request
                     </a>
                 </div>
                 
-                <p>If you need to reschedule or have questions, please contact our service team at service@bodeev.com or call (555) 123-4567.</p>
+                <p>If you need to reschedule or have questions, please contact our service team at service@matikaiev.com or call (555) 123-4567.</p>
                 
                 <p>Best regards,<br>
                 MATIKAI Service Team</p>
@@ -236,7 +236,7 @@ class EmailService:
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <img src="https://bodeev.com/logo.png" alt="MATIKAI" style="height: 60px;">
+                    <img src="https://matikaiev.com/logo.png" alt="MATIKAI" style="height: 60px;">
                 </div>
                 
                 <h2 style="color: #2c5530;">Your Custom EV Charging Quote is Ready!</h2>
@@ -269,10 +269,10 @@ class EmailService:
                 </ul>
                 
                 <div style="text-align: center; margin: 30px 0;">
-                    <a href="https://bodeev.com/accept-quote/{quote_id}" style="background: #2c5530; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block; margin: 0 10px;">
+                    <a href="https://matikaiev.com/accept-quote/{quote_id}" style="background: #2c5530; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block; margin: 0 10px;">
                         Accept Quote
                     </a>
-                    <a href="https://bodeev.com/schedule-call/{quote_id}" style="background: #fff; color: #2c5530; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block; border: 2px solid #2c5530; margin: 0 10px;">
+                    <a href="https://matikaiev.com/schedule-call/{quote_id}" style="background: #fff; color: #2c5530; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block; border: 2px solid #2c5530; margin: 0 10px;">
                         Schedule Call
                     </a>
                 </div>

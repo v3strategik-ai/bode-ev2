@@ -39,7 +39,7 @@ async def get_test_client():
                 <h3>🔐 Authentication</h3>
                 <div>
                     <h4>Register User</h4>
-                    <input type="text" id="regEmail" placeholder="Email" value="test@bodeev.com">
+                    <input type="text" id="regEmail" placeholder="Email" value="test@matikaiev.com">
                     <input type="text" id="regUsername" placeholder="Username" value="testuser">
                     <input type="text" id="regFullName" placeholder="Full Name" value="Test User">
                     <input type="password" id="regPassword" placeholder="Password" value="password123">
@@ -47,7 +47,7 @@ async def get_test_client():
                 </div>
                 <div style="margin-top: 15px;">
                     <h4>Login</h4>
-                    <input type="text" id="loginEmail" placeholder="Email" value="test@bodeev.com">
+                    <input type="text" id="loginEmail" placeholder="Email" value="test@matikaiev.com">
                     <input type="password" id="loginPassword" placeholder="Password" value="password123">
                     <button onclick="loginUser()">Login</button>
                 </div>

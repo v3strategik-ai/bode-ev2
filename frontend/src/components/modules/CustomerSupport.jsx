@@ -12,7 +12,7 @@ const CustomerSupport = () => {
   const [tickets] = useState([
     {
       id: 'T-2025-001',
-      title: 'Charging Station Not Working',
+      title: 'System Integration Issue',
       customer: 'TechCorp Solutions',
       contact_name: 'Sarah Johnson',
       contact_email: 's.johnson@tesla.com',

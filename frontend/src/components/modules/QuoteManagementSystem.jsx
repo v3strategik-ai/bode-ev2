@@ -49,7 +49,7 @@ const QuoteManagementSystem = () => {
       contact_email: 's.johnson@techcorp.com',
       contact_phone: '+15551234567',
       value: '$2.4M',
-      stations: 48,
+      systems: 48,
       deadline: '2025-09-28',
       status: 'In Review',
       progress: 75

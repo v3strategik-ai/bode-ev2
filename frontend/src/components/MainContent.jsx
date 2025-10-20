@@ -301,6 +301,17 @@ const MainContent = () => {
           <Phone className="h-4 w-4 mr-2 inline" />
           Sales Communications
         </button>
+        <button
+          onClick={() => setActiveTab('ai-intelligence')}
+          className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${
+            activeTab === 'ai-intelligence' 
+              ? 'bg-white text-blue-600 shadow-md' 
+              : 'text-gray-600 hover:text-gray-900'
+          }`}
+        >
+          <Brain className="h-4 w-4 mr-2 inline" />
+          AI Intelligence
+        </button>
       </div>
 
       {/* Dynamic Content Based on Active Tab */}

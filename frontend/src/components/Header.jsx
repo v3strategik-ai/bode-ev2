@@ -75,10 +75,10 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
               MATIKAI Enterprise AI
             </h1>
             <p className="text-base text-gray-600 font-medium leading-relaxed">
-              AI-powered business solutions & intelligent automation
+              Intelligent business automation & AI-driven solutions
             </p>
             <p className="text-sm text-blue-600 font-medium mt-1">
-              Sales & Communications Platform
+              Enterprise AI Platform & CRM
             </p>
           </div>
         </div>

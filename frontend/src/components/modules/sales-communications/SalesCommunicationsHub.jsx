@@ -128,7 +128,7 @@ const SalesCommunicationsHub = () => {
         <div>
           <h1 className="text-3xl font-bold">Sales Communications Hub</h1>
           <p className="text-muted-foreground">
-            Unified dialer and email automation for BODE EV sales team
+            Unified dialer and email automation for MATIKAI AI sales team
           </p>
         </div>
         <div className="flex items-center space-x-2">

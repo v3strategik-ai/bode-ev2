@@ -215,7 +215,7 @@ const LeadGenerationHub = () => {
         lead_name: lead.company_name,
         lead_score: leadScore?.score || 75,
         estimated_value: `$${leadScore?.estimated_value?.toLocaleString() || '50,000'}`,
-        sales_rep: 'BODE EV Sales Team'
+        sales_rep: 'MATIKAI AI Team'
       });
 
       if (result.success) {

@@ -1,5 +1,5 @@
 """
-Email Service for BODE EV CRM System
+Email Service for MATIKAI AI CRM System
 Handles SendGrid integration for email automation and campaigns
 """
 

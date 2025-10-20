@@ -78,17 +78,18 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
         {/* Center section - Stats */}
         <div className="flex flex-col justify-center">
           <div className="flex items-center space-x-6 text-sm">
-          <div className="flex items-center space-x-3 bg-blue-50 backdrop-blur-sm rounded-full px-4 py-2 border border-blue-200">
-            <div className="w-2.5 h-2.5 bg-blue-500 rounded-full animate-pulse shadow-lg shadow-blue-300/30"></div>
-            <span className="font-semibold text-blue-700">99.8% AI Uptime</span>
-          </div>
-          <div className="flex items-center space-x-3 bg-indigo-50 backdrop-blur-sm rounded-full px-4 py-2 border border-indigo-200">
-            <div className="w-2.5 h-2.5 bg-indigo-500 rounded-full animate-pulse shadow-lg shadow-indigo-300/30"></div>
-            <span className="font-semibold text-indigo-700">94.2% Accuracy Rate</span>
-          </div>
-          <div className="flex items-center space-x-3 bg-purple-50 backdrop-blur-sm rounded-full px-4 py-2 border border-purple-200">
-            <div className="w-2.5 h-2.5 bg-purple-500 rounded-full animate-pulse shadow-lg shadow-purple-300/30"></div>
-            <span className="font-semibold text-purple-700">2.8M+ Interactions</span>
+            <div className="flex items-center space-x-3 bg-blue-50 backdrop-blur-sm rounded-full px-4 py-2 border border-blue-200">
+              <div className="w-2.5 h-2.5 bg-blue-500 rounded-full animate-pulse shadow-lg shadow-blue-300/30"></div>
+              <span className="font-semibold text-blue-700">99.8% AI Uptime</span>
+            </div>
+            <div className="flex items-center space-x-3 bg-indigo-50 backdrop-blur-sm rounded-full px-4 py-2 border border-indigo-200">
+              <div className="w-2.5 h-2.5 bg-indigo-500 rounded-full animate-pulse shadow-lg shadow-indigo-300/30"></div>
+              <span className="font-semibold text-indigo-700">94.2% Accuracy Rate</span>
+            </div>
+            <div className="flex items-center space-x-3 bg-purple-50 backdrop-blur-sm rounded-full px-4 py-2 border border-purple-200">
+              <div className="w-2.5 h-2.5 bg-purple-500 rounded-full animate-pulse shadow-lg shadow-purple-300/30"></div>
+              <span className="font-semibold text-purple-700">2.8M+ Interactions</span>
+            </div>
           </div>
         </div>
 

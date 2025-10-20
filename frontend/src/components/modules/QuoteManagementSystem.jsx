@@ -56,10 +56,10 @@ const QuoteManagementSystem = () => {
     },
     {
       id: 'Q-2025-002', 
-      project: 'Walmart Fleet Charging',
-      client: 'Walmart',
+      project: 'AI Workflow Optimization Suite',
+      client: 'InnovateBiz Corp',
       contact_name: 'Mike Chen',
-      contact_email: 'm.chen@walmart.com', 
+      contact_email: 'm.chen@innovatebiz.com', 
       contact_phone: '+15559876543',
       value: '$890K',
       stations: 24,

@@ -62,7 +62,7 @@ const QuoteManagementSystem = () => {
       contact_email: 'm.chen@innovatebiz.com', 
       contact_phone: '+15559876543',
       value: '$890K',
-      stations: 24,
+      systems: 24,
       deadline: '2025-10-15',
       status: 'Sent',
       progress: 100

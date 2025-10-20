@@ -130,6 +130,7 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
           </div>
         </div>
       </div>
+      </div>
 
       {/* Action buttons row */}
       <div className="flex items-center space-x-4 mt-6 pt-4 border-t border-gray-100">

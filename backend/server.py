@@ -27,7 +27,7 @@ from integrations.email.router import router as email_router
 from integrations.dialer.router import router as dialer_router
 
 # Import AI Analytics components
-from integrations.ai_analytics.router import router as ai_analytics_router
+from integrations.ai-analytics.router import router as ai_analytics_router
 
 
 ROOT_DIR = Path(__file__).parent

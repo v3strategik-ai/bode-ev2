@@ -54,11 +54,18 @@ const Header = ({ darkMode, setDarkMode, onModuleChange }) => {
         {/* Left section - Large MATIKAI Logo with badge underneath */}
         <div className="flex items-center space-x-8">
           <div className="flex flex-col items-center space-y-2">
-            <img 
-              src="/matikai-logo.png" 
-              alt="MATIKAI Logo" 
-              className="h-36 w-auto shadow-2xl rounded-xl transform hover:scale-105 transition-transform duration-300"
-            />
+            <div className="relative group">
+              <img 
+                src="/matikai-logo.png" 
+                alt="MATIKAI Logo" 
+                className="h-24 w-auto backdrop-blur-sm bg-white/10 shadow-2xl rounded-2xl border border-white/20 transform hover:scale-110 transition-all duration-500 hover:shadow-3xl hover:bg-white/20 relative z-10"
+                style={{
+                  filter: 'drop-shadow(0 25px 50px rgba(59, 130, 246, 0.15))'
+                }}
+              />
+              {/* Floating glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-500/20 rounded-2xl blur-xl -z-10 group-hover:from-blue-400/30 group-hover:to-purple-500/30 transition-all duration-500"></div>
+            </div>
             <span className="text-sm text-blue-600 font-semibold bg-blue-50 px-4 py-2 rounded-full border border-blue-200 shadow-md">
               Enterprise AI Platform
             </span>
